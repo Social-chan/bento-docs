@@ -550,7 +550,7 @@ h5,
 h6 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.1;
-  margin: calc(2rem - 0.14285em) 0em 1rem;
+  margin-bottom: 1rem;
   font-weight: 300;
   padding: 0em;
 }
@@ -729,7 +729,7 @@ samp {
 
 input {
   border: 2px solid rgba(153, 153, 153, 0.9);
-  padding: 6px;
+  padding: 8px 6px;
   border-radius: 2px;
   color: #999999;
 }
@@ -751,6 +751,7 @@ input.primary:focus {
 }
 
 .control {
+  position: relative;
   margin-bottom: 12px;
 }
 
@@ -762,19 +763,27 @@ input.primary:focus {
   padding-right: 32px;
 }
 
-.control.with-icon i {
-  position: relative;
-  right: 32px;
-  top: 1px;
+.control.with-icon i,
+.control.with-icon span {
+  position: absolute;
+  right: 0;
+  top: 0;
   color: #999999;
+  width: 2.25em;
+  height: 2.25em;
+}
+
+.control.with-icon svg {
+  width: 20px;
+  height: auto;
 }
 
 .control.with-button button {
-  position: relative;
-  right: 39px;
-  top: 1px;
-  padding: 4px 4px 5px 4px;
+  position: absolute;
+  right: 1px;
+  top: -6px;
   border-radius: 2px;
+  padding: 7px 6px 6px;
 }
 
 .control.with-button button i {
