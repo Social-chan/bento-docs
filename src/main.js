@@ -4,6 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// Load external libs
+import feather from 'feather-icons'
+import anchors from 'anchor-js'
+import VueHighlightJS from 'vue-highlightjs'
+Vue.prototype.feather = feather
+Vue.prototype.anchors = anchors
+Vue.use(VueHighlightJS)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
