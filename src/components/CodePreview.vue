@@ -30,11 +30,12 @@ export default {
     })
 
     var nextEl = el.nextElementSibling
-    var newEl = document.createElement('button')
+    var newEl = document.createElement('a')
 
     // Set attributes for the new element
-    newEl.setAttribute('class', 'docs-clipboard tooltip-left')
-    newEl.setAttribute('aria-label', 'Copy code')
+    newEl.setAttribute('href', 'javascript:;')
+    newEl.setAttribute('class', 'docs-clipboard text-black tooltip-left')
+    newEl.setAttribute('aria-label', 'Copy')
     newEl.setAttribute('data-clipboard-target', '#' + this.identifier + '_code')
     newEl.innerHTML = this.feather.toSvg('clipboard')
 
@@ -51,8 +52,13 @@ pre {
 
 .docs-clipboard {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 6px;
+  right: 6px;
+}
+
+.docs-clipboard svg {
+  width: 16px;
+  height: 16px;
 }
 
 .hljs {

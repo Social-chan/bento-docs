@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <header class="okaeri">
-      <h2>Tadaima</h2>
-      Tadaima is a pure CSS framework based on modern components and highly customizable with mixes.
+      <h2>Bento UI</h2>
+      Bento UI is a pure CSS framework based on modern components and highly customizable with remixes.
       <div class="action">
-        <a href="https://github.com/Social-chan/Tadaima/archive/tadaima-v0.6.0.zip" class="primary text-white" role="button"
+        <a href="https://github.com/Social-chan/Tadaima/archive/tadaima-v0.6.0.zip" class="alt primary" role="button"
         v-html="feather.toSvg('download') + ' Download'"></a>
       </div>
       <nav>
@@ -22,7 +22,7 @@
 
     <router-view></router-view>
 
-    <footer>
+    <footer class="text-white bg-primary">
       <nav>
         <ul>
           <li>
