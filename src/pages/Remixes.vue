@@ -110,6 +110,27 @@
         </div>
       </div>
     </section>
+    <section>
+      <h2 id="sections">Sections</h2>
+
+      <h3>Color variations</h3>
+      <code-preview identifier="sections_colors" lang="html">
+        <section class="p-4 bg-primary">
+          <h2>
+            Section
+            <small>Primary</small>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos saepe minima sint cupiditate placeat inventore voluptate consequatur, repellat labore et ullam, odio ipsa iure expedita laborum maxime, molestias commodi! Corrupti.</p>
+        </section>
+        <section class="p-4 bg-secondary">
+          <h2>
+            Section
+            <small>Secondary</small>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos saepe minima sint cupiditate placeat inventore voluptate consequatur, repellat labore et ullam, odio ipsa iure expedita laborum maxime, molestias commodi! Corrupti.</p>
+        </section>
+      </code-preview>
+    </section>
   </div>
 </template>
 

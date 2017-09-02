@@ -40,11 +40,26 @@
             <h3>Social-chan</h3>
             <p>
               Bento UI is developed by the future design of <a href="https://social-chan.com" target="_blank">Social-chan</a>,
-              an anime and manga social network.
+              a social network focused on anime and manga (Japan culture) and centered on the .
             </p>
           </div>
           <div class="col-2">
             <img src="../../static/img/socialchan-logo.svg" style="border-radius: 24px" width="256" height="256" alt>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flow">
+          <div class="col-1 ml-auto text-center">
+            <div v-html="feather.toSvg('download-cloud', { 'width': '100%', 'height': 'auto' })"></div>
+          </div>
+          <div class="col-9 ml-auto pr-4">
+            <code-preview :show_preview="false" identifier="npm_install" lang="sh">
+              npm install bento-ui
+            </code-preview>
+            <!-- <code-preview :show_preview="false" identifier="cdn_install" lang="html">
+              {{ parseHTML(this.cdn) }}
+            </code-preview> -->
           </div>
         </div>
       </section>
@@ -54,7 +69,19 @@
 
 <script>
 export default {
-  name: 'home'
+  name: 'home',
+
+  data () {
+    return {
+      cdn: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tadaima@0.6.0/dist/tadaima.min.css" integrity="sha256-RwHO+cDRBjqAPKa4NoGBwbVRMOTJCjQeATDu23TStm0=">'
+    }
+  },
+
+  methods: {
+    parseHTML (v) {
+      console.log(v.replace(/&lt;/g, '<').replace(/&gt;/g, '>'))
+    }
+  }
 }
 </script>
 

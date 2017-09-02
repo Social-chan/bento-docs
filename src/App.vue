@@ -2,9 +2,11 @@
   <div id="app">
     <header class="okaeri">
       <h2>Bento UI</h2>
-      Bento UI is a pure CSS framework based on modern components and highly customizable with remixes.
+      <p class="text-light">
+        Bento UI is a pure CSS framework based on modern components and highly customizable with remixes.
+      </p>
       <div class="action">
-        <a href="https://github.com/Social-chan/Tadaima/archive/tadaima-v0.6.0.zip" class="alt primary" role="button"
+        <a :href="'https://github.com/Social-chan/Tadaima/archive/tadaima-' + latest + '.zip'" class="alt primary" role="button"
         v-html="feather.toSvg('download') + ' Download'"></a>
       </div>
       <nav>
@@ -47,7 +49,25 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+
+  data () {
+    return {
+      latest: null
+    }
+  },
+
+  mounted () {
+    this.fetchRelease()
+  },
+
+  methods: {
+    fetchRelease () {
+      this.$http.get('https://api.github.com/repos/Social-chan/Tadaima/releases').then(response => {
+        this.latest = this._.head(response.data).tag_name
+      })
+    }
+  }
 }
 </script>
 

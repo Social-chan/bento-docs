@@ -3,7 +3,7 @@
     <div :id="identifier">
       <slot></slot>
     </div>
-    <pre class="mt-3 mb-5" v-highlightjs="code"><code :id="identifier + '_code'" :class="lang"></code></pre>
+    <pre v-if="show_code" class="mt-3 mb-5" v-highlightjs="code"><code :id="identifier + '_code'" :class="lang"></code></pre>
   </div>
 </template>
 
@@ -12,6 +12,16 @@
 
 export default {
   props: {
+    show_preview: {
+      type: Boolean,
+      required: false,
+      default: true
+    },
+    show_code: {
+      type: Boolean,
+      required: false,
+      default: true
+    },
     identifier: String,
     lang: String
   },
@@ -40,6 +50,10 @@ export default {
     newEl.innerHTML = this.feather.toSvg('clipboard')
 
     nextEl.appendChild(newEl)
+
+    if (this.show_preview === false) {
+      el.removeChild(el.firstChild)
+    }
   }
 }
 </script>

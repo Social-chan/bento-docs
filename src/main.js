@@ -5,8 +5,12 @@ import App from './App'
 import router from './router'
 
 // Load external libs
+import axios from 'axios'
+import lodash from 'lodash'
 import feather from 'feather-icons'
 import VueHighlightJS from 'vue-highlightjs'
+Vue.prototype.$http = axios.create()
+Vue.prototype._ = lodash
 Vue.prototype.feather = feather
 Vue.use(VueHighlightJS)
 Vue.prototype.beautify = require('js-beautify').html
