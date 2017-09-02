@@ -14,8 +14,8 @@
         <router-link tag="li" :to="{ name: 'components' }">
           <a>Components</a>
         </router-link>
-        <router-link tag="li" :to="{ name: 'mixes' }">
-          <a>Mixes</a>
+        <router-link tag="li" :to="{ name: 'remixes' }">
+          <a>Remixes</a>
         </router-link>
       </nav>
     </header>
@@ -47,27 +47,11 @@
 
 <script>
 export default {
-  name: 'app',
-
-  mounted () {
-    this.anchors.options = {
-      placement: 'left',
-      icon: '#'
-    }
-    this.anchors.add('h2[id]')
-  }
+  name: 'app'
 }
 </script>
 
 <style>
-.anchorjs-link {
-  transition: all .25s linear;
-}
-
-*:hover > .anchorjs-link {
-  margin-left: -1.125em !important;
-}
-
 .demo-icon {
   text-align: center;
 }
@@ -80,10 +64,5 @@ export default {
 .demo.panel {
   text-align: center;
   font-size: 36px;
-}
-
-.docs-clipboard {
-  float: right;
-  color: #000;
 }
 </style>

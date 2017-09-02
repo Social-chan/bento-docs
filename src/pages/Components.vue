@@ -1,6 +1,21 @@
 <template>
   <div class="container">
     <section>
+      <h2 id="flow">Grids</h2>
+
+      <h3>Flows</h3>
+      <code-preview identifier="flows" lang="html">
+        <div class="flow">
+          <div class="col-2">
+            <div class="panel bg-red br-1 b-white demo">.col-2</div>
+          </div>
+          <div class="col-10">
+            <div class="panel bg-red demo">.col-10</div>
+          </div>
+        </div>
+      </code-preview>
+    </section>
+    <section class="mb-5">
       <h2 id="buttons">Buttons</h2>
 
       <h3>Main colors</h3>
@@ -30,6 +45,34 @@
       <button class="red text-white">
         <i v-html="feather.toSvg('user-minus')"></i> Remove friend
       </button>
+    </section>
+    <section>
+      <h2 id="panels">Panels</h2>
+
+      <h3>Basic example</h3>
+
+      <div class="flow">
+        <div class="col-6 pr-2">
+          <code-preview identifier="panel_primary" lang="html">
+            <div class="panel bg-primary">
+              <h4>Panel Primary</h4>
+              <p>
+                <a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit.
+              </p>
+            </div>
+          </code-preview>
+        </div>
+        <div class="col-6 pl-2">
+          <code-preview identifier="panel_secondary" lang="html">
+            <div class="panel bg-secondary">
+              <h4>Panel Secondary</h4>
+              <p>
+                <a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit.
+              </p>
+            </div>
+          </code-preview>
+        </div>
+      </div>
     </section>
   </div>
 </template>

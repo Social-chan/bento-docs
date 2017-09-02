@@ -4,7 +4,7 @@ import Router from 'vue-router'
 // Pages
 import Home from '@/pages/Home'
 import Components from '@/pages/Components'
-import Mixes from '@/pages/Mixes'
+import Remixes from '@/pages/Remixes'
 
 Vue.use(Router)
 
@@ -21,9 +21,9 @@ export default new Router({
       component: Components
     },
     {
-      path: '/mixes',
-      name: 'mixes',
-      component: Mixes
+      path: '/remixes',
+      name: 'remixes',
+      component: Remixes
     }
   ],
   linkActiveClass: '',

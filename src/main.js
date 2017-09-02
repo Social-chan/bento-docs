@@ -6,12 +6,10 @@ import router from './router'
 
 // Load external libs
 import feather from 'feather-icons'
-import anchors from 'anchor-js'
 import VueHighlightJS from 'vue-highlightjs'
 Vue.prototype.feather = feather
-Vue.prototype.anchors = anchors
-Vue.prototype.beautify = require('js-beautify').html
 Vue.use(VueHighlightJS)
+Vue.prototype.beautify = require('js-beautify').html
 
 // Components
 import CodePreview from './components/CodePreview'

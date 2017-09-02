@@ -3,13 +3,13 @@
     <div :id="identifier">
       <slot></slot>
     </div>
-    <pre v-highlightjs="code">
-      <code :class="lang"></code>
-    </pre>
+    <pre class="mt-3 mb-5" v-highlightjs="code"><code :id="identifier + '_code'" :class="lang"></code></pre>
   </div>
 </template>
 
 <script>
+// import Clipboard from 'clipboard'
+
 export default {
   props: {
     identifier: String,
@@ -23,14 +23,38 @@ export default {
   },
 
   mounted () {
-    this.code = this.beautify(document.getElementById(this.identifier).innerHTML, {
+    var el = document.getElementById(this.identifier)
+
+    this.code = this.beautify(el.innerHTML, {
       indent_size: 2
     })
+
+    var nextEl = el.nextElementSibling
+    var newEl = document.createElement('button')
+
+    // Set attributes for the new element
+    newEl.setAttribute('class', 'docs-clipboard tooltip-left')
+    newEl.setAttribute('aria-label', 'Copy code')
+    newEl.setAttribute('data-clipboard-target', '#' + this.identifier + '_code')
+    newEl.innerHTML = this.feather.toSvg('clipboard')
+
+    nextEl.appendChild(newEl)
   }
 }
 </script>
 
 <style>
+pre {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.docs-clipboard {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .hljs {
   display: block;
   overflow-x: auto;
