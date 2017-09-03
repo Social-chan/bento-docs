@@ -1,7 +1,7 @@
 {
-  "name": "tadaima-docs",
+  "name": "bento-docs",
   "version": "0.6.0",
-  "description": "Docs site for Tadaima",
+  "description": "Docs site for Bento UI",
   "author": "D8vjork <d8vjork@outlook.com>",
   "private": true,
   "scripts": {
