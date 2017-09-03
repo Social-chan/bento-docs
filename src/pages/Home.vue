@@ -1,6 +1,6 @@
 <template>
   <div id="landing">
-    <section class="docs-feature bg-primary text-white plr-5" style="margin-top: -24px">
+    <section class="docs-feature bg-primary text-white plr-5">
       <div class="flow">
         <div class="col demo-icon" v-html="feather.toSvg('anchor')"></div>
         <div class="col demo-icon" v-html="feather.toSvg('camera')"></div>
@@ -51,7 +51,7 @@
       <section>
         <div class="flow">
           <div class="col-1 ml-auto text-center">
-            <div v-html="feather.toSvg('download-cloud', { 'width': '100%', 'height': 'auto' })"></div>
+            <div v-html="feather.toSvg('download-cloud', { 'width': '100%', 'height': '100%' })"></div>
           </div>
           <div class="col-9 ml-auto pr-4">
             <code-preview :show_preview="false" identifier="npm_install" lang="sh">

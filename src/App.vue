@@ -6,18 +6,18 @@
         Bento UI is a pure CSS framework based on modern components and highly customizable with remixes.
       </p>
       <div class="action">
-        <a :href="'https://github.com/Social-chan/Tadaima/archive/tadaima-' + latest + '.zip'" class="alt primary" role="button"
+        <a :href="'https://github.com/Social-chan/Bento/archive/bento-' + latest + '.zip'" class="alt primary" role="button"
         v-html="feather.toSvg('download') + ' Download'"></a>
       </div>
       <nav>
-        <router-link tag="li" :to="{ name: 'home' }">
+        <router-link tag="li" :to="{ name: 'h' }">
           <a>Getting started</a>
         </router-link>
-        <router-link tag="li" :to="{ name: 'components' }">
+        <router-link tag="li" :to="{ name: 'c' }">
           <a>Components</a>
         </router-link>
-        <router-link tag="li" :to="{ name: 'remixes' }">
-          <a>Remixes</a>
+        <router-link tag="li" :to="{ name: 'e' }">
+          <a>Examples</a>
         </router-link>
       </nav>
     </header>

@@ -1,11 +1,20 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
+var semver = require('semver')
+var fs = require('fs')
+
+var ver = 'v' + semver.major(process.env.npm_package_version)
+var verpath = path.resolve(__dirname, '../docs/' + ver)
+
+if (!fs.existsSync(verpath)) {
+  fs.mkdirSync(verpath)
+}
 
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: path.resolve(__dirname, '../docs/index.html'),
-    assetsRoot: path.resolve(__dirname, '../docs'),
+    index: verpath + '/index.html',
+    assetsRoot: verpath,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     productionSourceMap: true,
