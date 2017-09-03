@@ -4,7 +4,7 @@
       <h2 id="buttons">Buttons</h2>
 
       <div class="flow justify-content-between d-flex">
-        <div class="col-5">
+        <div class="col-6 pr-2">
           <h3>Alt version</h3>
           <code-preview identifier="alt_buttons" lang="html">
             <button class="alt primary">Primary</button>&#32;
@@ -12,7 +12,7 @@
           </code-preview>
         </div>
 
-        <div class="col-5">
+        <div class="col-6 pl-2">
           <h3>Omusubi version</h3>
           <code-preview identifier="omusubi_buttons" lang="html">
             <button class="omusubi primary text-white">Primary</button>&#32;
@@ -20,7 +20,7 @@
           </code-preview>
         </div>
 
-        <div class="col-5">
+        <div class="col-6 pr-2">
           <h3>Sushi version</h3>
           <code-preview identifier="sushi_buttons" lang="html">
             <button class="alt sushi primary">Primary</button>&#32;
@@ -28,7 +28,7 @@
           </code-preview>
         </div>
 
-        <div class="col-5">
+        <div class="col-6 pl-2">
           <h3>Onigiri version</h3>
           <code-preview identifier="onigiri_buttons" lang="html">
             <button class="onigiri primary text-white">Primary</button>&#32;
