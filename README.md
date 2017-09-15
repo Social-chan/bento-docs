@@ -1,6 +1,6 @@
-# tadaima-docs
+# bento-docs
 
-> Docs site for Tadaima
+> Docs site for Bento-UI
 
 ## Build Setup
 
