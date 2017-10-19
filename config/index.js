@@ -1,22 +1,17 @@
+
+'use strict'
+// Template version: 1.1.1
 // see http://vuejs-templates.github.io/webpack for documentation.
-var path = require('path')
-var semver = require('semver')
-var fs = require('fs')
 
-var ver = 'v' + semver.major(process.env.npm_package_version)
-var verpath = path.resolve(__dirname, '../docs/' + ver)
-
-if (!fs.existsSync(verpath)) {
-  fs.mkdirSync(verpath)
-}
+const path = require('path')
 
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: verpath + '/index.html',
-    assetsRoot: verpath,
+    index: path.resolve(__dirname, '../dist/index.html'),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/' + ver + '/',
+    assetsPublicPath: '/',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -32,7 +27,7 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8080,
+    port: process.env.PORT || 8080,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
