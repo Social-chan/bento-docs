@@ -18,6 +18,9 @@ import Tooltips from '@/pages/components/Tooltips.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'active',
   routes: [
     {
       path: '/home',
@@ -70,7 +73,5 @@ export default new Router({
       name: 'e',
       component: Examples
     }
-  ],
-  linkActiveClass: 'active',
-  linkExactActiveClass: 'active'
+  ]
 })
