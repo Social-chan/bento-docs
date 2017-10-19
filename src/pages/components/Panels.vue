@@ -57,11 +57,15 @@
       </div>
     </div>
 
-    <h3>With icon</h3>
+    <h3>
+      With icon
+      <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
+      <span class="omusubi bg-purple text-white pbt-1 plr-2">test</span>
+    </h3>
     <div class="flow">
       <div class="col-6 pr-2">
         <div class="panel bg-red text-white">
-          <i class="feat" v-html="feather.toSvg('alert-triangle')"></i>
+          <i class="icon" v-html="feather.toSvg('alert-triangle')"></i>
           <h4>Panel Red</h4>
           <p>
             <a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit.
@@ -70,7 +74,7 @@
       </div>
       <div class="col-6 pl-2">
         <div class="omusubi panel bg-green text-white">
-          <i class="feat" v-html="feather.toSvg('star')"></i>
+          <i class="icon" v-html="feather.toSvg('star')"></i>
           <h4>Panel Green</h4>
           <p>
             <a href="#">Lorem ipsum</a> dolor sit amet, consectetuer adipiscing elit.

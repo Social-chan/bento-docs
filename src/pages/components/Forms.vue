@@ -10,7 +10,11 @@
       </form>
     </code-preview>
 
-    <h3>Inputs with</h3>
+    <h3>
+      Inputs with
+      <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
+      <span class="omusubi bg-purple text-white pbt-1 plr-2">test</span>
+    </h3>
     <form class="mb-5">
       <div class="control with-icon">
         <input type="text" placeholder="input .with-icon">

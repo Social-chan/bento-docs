@@ -62,7 +62,11 @@
       </div>
 
       <div class="col-12 col-md-6 pl-md-2">
-        <h3>Onigiri version</h3>
+        <h3>
+          Onigiri version
+          <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
+          <span class="omusubi bg-purple text-white pbt-1 plr-2">test</span>
+        </h3>
         <code-preview identifier="onigiri_buttons" lang="html">
           <button class="onigiri primary text-white">Primary</button>&#32;
           <button class="onigiri-2 secondary text-white">B</button>

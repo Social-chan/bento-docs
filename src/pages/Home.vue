@@ -49,6 +49,49 @@
         </div>
       </section>
       <section>
+        <h2>Discover a new UI with...</h2>
+        <h3>Colors</h3>
+        <div class="flow justify-content-center text-center">
+          <div class="col bg-primary text-white">
+            primary
+          </div>
+          <div class="col bg-secondary text-white">
+            secondary
+          </div>
+          <div class="col bg-red text-white">
+            red
+          </div>
+          <div class="col bg-black text-white">
+            black
+          </div>
+          <div class="col bg-green text-white">
+            green
+          </div>
+          <div class="col bg-brown text-white">
+            brown
+          </div>
+          <div class="col bg-orange text-white">
+            orange
+          </div>
+          <div class="col bg-purple text-white">
+            purple
+          </div>
+          <div class="col bg-yellow text-white">
+            yellow
+          </div>
+          <div class="col bg-pink text-white">
+            pink
+          </div>
+          <div class="col bg-darkgreen text-white">
+            darkgreen
+          </div>
+          <div class="col bg-cyan text-white">
+            cyan
+          </div>
+        </div>
+        <h3>Components</h3>
+      </section>
+      <section>
         <div class="flow">
           <div class="col-1 ml-auto text-center">
             <div v-html="feather.toSvg('download-cloud', { 'width': '100%', 'height': '100%' })"></div>

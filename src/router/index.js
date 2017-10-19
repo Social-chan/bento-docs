@@ -19,11 +19,11 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  linkActiveClass: 'active',
+  linkActiveClass: '',
   linkExactActiveClass: 'active',
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'h',
       component: Home
     },

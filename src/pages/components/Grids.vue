@@ -17,6 +17,22 @@
       </div>
     </code-preview>
 
+    <h3>
+      Wrappers
+      <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
+      <span class="omusubi bg-purple text-white pbt-1 plr-2">test</span>
+    </h3>
+    <code-preview identifier="wrappers" lang="html">
+      <div class="wrapper">
+        <div class="one">
+          <div class="panel bg-red br-1 b-white text-white demo">.one</div>
+        </div>
+        <div class="two">
+          <div class="panel bg-red text-white demo">.two</div>
+        </div>
+      </div>
+    </code-preview>
+
     <h3>Variables</h3>
     <table>
       <thead>

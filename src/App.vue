@@ -2,7 +2,7 @@
   <div id="app">
     <header class="okaeri">
       <h2>Bento UI</h2>
-      <p class="text-light">
+      <p class="text-light text-1">
         Bento UI is a pure CSS framework based on modern components and highly customizable with remixes.
       </p>
       <div class="action">
