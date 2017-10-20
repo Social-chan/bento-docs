@@ -12,8 +12,8 @@
 
     <h3>
       Inputs with
-      <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
-      <span class="omusubi bg-purple text-white pbt-1 plr-2">test</span>
+      <span class="badge omusubi bg-green text-white">new!</span>
+      <span class="badge omusubi bg-purple text-white">test</span>
     </h3>
     <form class="mb-5">
       <div class="control with-icon">

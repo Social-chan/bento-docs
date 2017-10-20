@@ -4304,4 +4304,16 @@ header {
   font-weight: 600;
 }
 
+.badge {
+  padding: 0.25rem 0.5rem;
+}
+
+.badge-2 {
+  padding: 0.5rem 1rem;
+}
+
+.badge-3 {
+  padding: 1rem 2rem;
+}
+
 /*# sourceMappingURL=bento.css.map */

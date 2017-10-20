@@ -33,7 +33,7 @@
       <div class="col-6 pr-2">
         <h3>
           Teriyaki version
-          <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
+          <span class="badge omusubi bg-green text-white">new!</span>
         </h3>
         <code-preview identifier="panel_sushi" lang="html">
           <div class="teriyaki panel bg-primary b-primary text-white">
@@ -59,8 +59,8 @@
 
     <h3>
       With icon
-      <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
-      <span class="omusubi bg-purple text-white pbt-1 plr-2">test</span>
+      <span class="badge omusubi bg-green text-white">new!</span>
+      <span class="badge omusubi bg-purple text-white">test</span>
     </h3>
     <div class="flow">
       <div class="col-6 pr-2">
