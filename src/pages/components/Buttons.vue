@@ -45,31 +45,31 @@
       <div class="col-12 col-md-6 pl-md-2">
         <h3>Omusubi version</h3>
         <code-preview identifier="omusubi_buttons" lang="html">
-          <button class="omusubi primary t-white">Primary</button>&#32;
-          <button class="omusubi secondary t-white">Secondary</button>
+          <button class="primary bs-rounded t-white">Primary</button>&#32;
+          <button class="secondary bs-rounded t-white">Secondary</button>
         </code-preview>
       </div>
 
       <div class="col-12 col-md-6 pr-md-2">
         <h3>
           Teriyaki version
-          <span class="badge omusubi bg-green t-white">new!</span>
+          <span class="bg-green bs-rounded py-1 t-white">new!</span>
         </h3>
         <code-preview identifier="buttons_teriyaki" lang="html">
-          <button class="alt teriyaki primary">Primary</button>&#32;
-          <button class="alt teriyaki secondary">Secondary</button>
+          <button class="alt bs-dashed primary">Primary</button>&#32;
+          <button class="alt bs-dashed secondary">Secondary</button>
         </code-preview>
       </div>
 
       <div class="col-12 col-md-6 pl-md-2">
         <h3>
           Onigiri version
-          <span class="badge omusubi bg-green t-white">new!</span>
-          <span class="badge omusubi bg-purple t-white">test</span>
+          <span class="bg-green bs-rounded py-1 t-white">new!</span>
+          <span class="bg-purple bs-rounded py-1 t-white">test</span>
         </h3>
         <code-preview identifier="onigiri_buttons" lang="html">
-          <button class="onigiri primary t-white">Primary</button>&#32;
-          <button class="onigiri-2 secondary t-white">B</button>
+          <button class="primary bs-circle t-white">Primary</button>&#32;
+          <button class="secondary bs-circle t-white">B</button>
         </code-preview>
       </div>
     </div>

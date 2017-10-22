@@ -32,7 +32,7 @@
       <span class="bg-primary py-2 t-white">Default</span>&#32;
       <span class="bg-primary py-2 t-1 t-white">Normal</span>&#32;
       <span class="bg-primary py-2 t-2 t-white">Large</span>&#32;
-      <span class="bg-primary py-2 text-3 t-white">Huge</span>
+      <span class="bg-primary py-2 t-3 t-white">Huge</span>
     </code-preview>
 
     <h3>Wrappers</h3>
@@ -45,29 +45,29 @@
       <div class="col-12 col-md-6 pr-md-2">
         <h3>Alt version</h3>
         <code-preview identifier="alt_badges" lang="html">
-          <span class="b-1 b-primary py-2 text-primary">Primary</span>&#32;
-          <span class="b-1 b-secondary py-2 text-secondary">Secondary</span>
+          <span class="b-1 b-primary py-2 t-primary">Primary</span>&#32;
+          <span class="b-1 b-secondary py-2 t-secondary">Secondary</span>
         </code-preview>
       </div>
       <div class="col-12 col-md-6 pr-md-2">
         <h3>Omusubi version</h3>
         <code-preview identifier="omusubi_badges" lang="html">
-          <span class="bg-primary omusubi py-2 t-white">Primary</span>&#32;
-          <span class="bg-secondary omusubi py-2 t-white">Secondary</span>
+          <span class="bg-primary bs-rounded py-2 t-white">Primary</span>&#32;
+          <span class="bg-secondary bs-rounded py-2 t-white">Secondary</span>
         </code-preview>
       </div>
       <div class="col-12 col-md-6 pr-md-2">
         <h3>Teriyaki version</h3>
         <code-preview identifier="teriyaki_badges" lang="html">
-          <span class="b-1 bs-dashed b-primary py-2 text-primary">Primary</span>&#32;
-          <span class="b-1 bs-dashed b-secondary py-2 text-secondary">Secondary</span>
+          <span class="b-2 bs-dashed b-primary py-2 t-primary">Primary</span>&#32;
+          <span class="b-2 bs-dashed b-secondary py-2 t-secondary">Secondary</span>
         </code-preview>
       </div>
       <div class="col-12 col-md-6 pr-md-2">
         <h3>Onigiri version</h3>
         <code-preview identifier="onigiri_badges" lang="html">
-          <span class="bg-green onigiri py-1 text-0 t-white">1</span>&#32;
-          <span class="d-inline-block bg-red onigiri s-1 t-white"></span>
+          <span class="bg-green bs-circle py-1 t-0 t-white">1</span>&#32;
+          <span class="d-inline-block bg-red bs-circle s-1 t-white"></span>
         </code-preview>
       </div>
     </div>

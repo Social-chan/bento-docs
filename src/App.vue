@@ -3,7 +3,7 @@
     <header class="okaeri">
       <h2>Bento UI</h2>
       <p class="tw-light t-1">
-        Bento UI is a pure CSS framework based on modern components and highly customizable with remixes.
+        Bento UI is a lightweight, sandbox and technical CSS framework for rapid prototyping any type of application.
       </p>
       <div class="action">
         <a :href="'https://github.com/Social-chan/Bento/archive/bento-' + latest + '.zip'" class="alt primary" role="button"
