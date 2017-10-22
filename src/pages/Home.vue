@@ -1,6 +1,6 @@
 <template>
   <div id="landing">
-    <section class="docs-feature bg-primary text-white plr-5">
+    <section class="docs-feature bg-primary t-white plr-5">
       <div class="flow">
         <div class="col demo-icon" v-html="feather.toSvg('anchor')"></div>
         <div class="col demo-icon" v-html="feather.toSvg('camera')"></div>
@@ -25,13 +25,14 @@
           <div class="col-9 ml-4">
             <h3>Bento UI</h3>
             <p class="mb-2">
-              Bento UI is a CSS framework based in SCSS with a mixed grid (flex and traditional) and tons of
-              highly customizable components and utilities that make fast web design prototyping.
+              Bento UI is a web design framework based in SCSS with layout and tons of utilities
+              for rapid web design prototyping making lightweight the stylesheet (CSS) part
+              and the markup (HTML) a little bit technical.
             </p>
             <p>
-              However it takes some parts of <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>
-              and <a href="http://bulma.io/" target="_blank">Bulma</a>, it has got remixes and several addons
-              that make more varied.
+              It takes some little pieces of code from <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>
+              and <a href="https://bulma.io/" target="_blank">Bulma</a>, two of the bests
+              web design frameworks.
             </p>
           </div>
         </div>
@@ -39,8 +40,13 @@
           <div class="col-9 pr-4">
             <h3>Social-chan</h3>
             <p>
-              Bento UI is developed by the future design of <a href="https://social-chan.com" target="_blank">Social-chan</a>,
-              a social network focused on anime and manga (Japan culture) and centered on the .
+              Bento UI is developed and maintained by <a href="https://social-chan.com" target="_blank">Social-chan team</a>,
+              and the <a href="https://github.com/Social-chan/Bento/graphs/contributors" target="_blank">GitHub contributors</a>
+              a team who was centered on the development of some web projects/services like Social-chan, Dojo, etc
+              (and all of the <a href="https://github.com/Social-chan">Social-chan OSS hosted at Github</a>).
+            </p>
+            <p>
+              <strong>Planned:</strong> Bento UI is the future of the Social-chan design (an anime and manga social network).
             </p>
           </div>
           <div class="col-2">
@@ -48,53 +54,55 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="mb-5">
         <h2>Discover a new UI with...</h2>
+
         <h3>Colors</h3>
-        <div class="flow justify-content-center text-center">
-          <div class="col bg-primary text-white">
+        <div class="flow justify-content-center mb-2 t-center">
+          <div class="col bg-primary t-white">
             primary
           </div>
-          <div class="col bg-secondary text-white">
+          <div class="col bg-secondary t-white">
             secondary
           </div>
-          <div class="col bg-red text-white">
+          <div class="col bg-red t-white">
             red
           </div>
-          <div class="col bg-black text-white">
+          <div class="col bg-black t-white">
             black
           </div>
-          <div class="col bg-green text-white">
+          <div class="col bg-green t-white">
             green
           </div>
-          <div class="col bg-brown text-white">
+          <div class="col bg-brown t-white">
             brown
           </div>
-          <div class="col bg-orange text-white">
+          <div class="col bg-orange t-white">
             orange
           </div>
-          <div class="col bg-purple text-white">
+          <div class="col bg-purple t-white">
             purple
           </div>
-          <div class="col bg-yellow text-white">
+          <div class="col bg-yellow t-white">
             yellow
           </div>
-          <div class="col bg-pink text-white">
+          <div class="col bg-pink t-white">
             pink
           </div>
-          <div class="col bg-darkgreen text-white">
+          <div class="col bg-darkgreen t-white">
             darkgreen
           </div>
-          <div class="col bg-cyan text-white">
+          <div class="col bg-cyan t-white">
             cyan
           </div>
         </div>
-        <h3>Components</h3>
+
+        <h3>Utilities</h3>
       </section>
       <section>
-        <div class="flow">
-          <div class="col-1 ml-auto text-center">
-            <div v-html="feather.toSvg('download-cloud', { 'width': '100%', 'height': '100%' })"></div>
+        <div class="flow justify-content-center align-items-center">
+          <div class="col-1 ml-auto t-center">
+            <div v-html="feather.toSvg('package', { 'width': '100%', 'height': '100%' })"></div>
           </div>
           <div class="col-9 ml-auto pr-4">
             <code-preview :show_preview="false" identifier="npm_install" lang="sh">

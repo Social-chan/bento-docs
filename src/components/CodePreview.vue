@@ -44,7 +44,7 @@ export default {
 
     // Set attributes for the new element
     newEl.setAttribute('href', 'javascript:;')
-    newEl.setAttribute('class', 'docs-clipboard text-black tooltip-left')
+    newEl.setAttribute('class', 'docs-clipboard t-black tooltip-left')
     newEl.setAttribute('aria-label', 'Copy')
     newEl.setAttribute('data-clipboard-target', '#' + this.identifier + '_code')
     newEl.innerHTML = this.feather.toSvg('clipboard')

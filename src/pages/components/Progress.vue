@@ -2,9 +2,9 @@
   <section>
     <h2>
       Progress
-      <span class="omusubi bg-green text-white pbt-1 plr-2">new!</span>
+      <span class="omusubi bg-green t-white pbt-1 plr-2">new!</span>
     </h2>
-    <p class="text-light text-2 mb-3">
+    <p class="tw-light t-2 mb-3">
       Native progress bars with HTML5 progress element supported by many browsers.
     </p>
 

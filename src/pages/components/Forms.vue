@@ -12,8 +12,8 @@
 
     <h3>
       Inputs with
-      <span class="badge omusubi bg-green text-white">new!</span>
-      <span class="badge omusubi bg-purple text-white">test</span>
+      <span class="bg-green bs-rounded py-1 t-white">new!</span>
+      <span class="bg-purple bs-rounded py-1 t-white">test</span>
     </h3>
     <form class="mb-5">
       <div class="control with-icon">
@@ -22,7 +22,7 @@
       </div>
       <div class="control with-button">
         <input type="text" class="primary" placeholder="input .with-button">
-        <button class="text-white" v-html="feather.toSvg('search')"></button>
+        <button class="t-white" v-html="feather.toSvg('search')"></button>
       </div>
     </form>
   </section>

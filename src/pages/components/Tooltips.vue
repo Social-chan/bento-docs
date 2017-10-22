@@ -3,7 +3,7 @@
     <h2 id="tooltips">
       Tooltips
     </h2>
-    <p class="text-light text-2 mb-3">
+    <p class="tw-light t-2 mb-3">
       Small bubble messages made in pure CSS.
     </p>
 
@@ -14,7 +14,7 @@
 
     <h3>Positions</h3>
     <code-preview identifier="tooltip_positions" lang="html">
-      <div class="flow text-center">
+      <div class="flow t-center">
         <div class="col-3">&#32;
           <a href="#" class="tooltip-top" aria-label="Top tooltip">Top</a>&#32;
         </div>

@@ -4,28 +4,44 @@ import Router from 'vue-router'
 // Pages
 import Home from '@/pages/Home'
 import Components from '@/pages/Components'
-import Examples from '@/pages/Examples'
+import Layout from '@/pages/Layout'
+import Customize from '@/pages/Customize'
+
+// Layouts pages
+import Grids from '@/pages/layout/Grids.vue'
 
 // Components pages
 import Playground from '@/pages/components/Playground.vue'
-import Grids from '@/pages/components/Grids.vue'
+import Tables from '@/pages/components/Tables.vue'
 import Buttons from '@/pages/components/Buttons.vue'
 import Forms from '@/pages/components/Forms.vue'
 import Panels from '@/pages/components/Panels.vue'
 import Progress from '@/pages/components/Progress.vue'
 import Tooltips from '@/pages/components/Tooltips.vue'
+import Badges from '@/pages/components/Badges.vue'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  linkActiveClass: '',
+  linkActiveClass: 'active',
   linkExactActiveClass: 'active',
   routes: [
     {
-      path: '/',
+      path: '/getting-started',
       name: 'h',
       component: Home
+    },
+    {
+      path: '/layout',
+      component: Layout,
+      children: [
+        {
+          path: '',
+          name: 'l',
+          component: Grids
+        }
+      ]
     },
     {
       path: '/components',
@@ -37,9 +53,9 @@ export default new Router({
           component: Playground
         },
         {
-          path: 'grids',
-          name: 'c.grids',
-          component: Grids
+          path: 'tables',
+          name: 'c.tables',
+          component: Tables
         },
         {
           path: 'buttons',
@@ -65,13 +81,18 @@ export default new Router({
           path: 'progress',
           name: 'c.progress',
           component: Progress
+        },
+        {
+          path: 'badges',
+          name: 'c.badges',
+          component: Badges
         }
       ]
     },
     {
-      path: '/examples',
-      name: 'e',
-      component: Examples
+      path: '/customize',
+      name: 'b',
+      component: Customize
     }
   ]
 })

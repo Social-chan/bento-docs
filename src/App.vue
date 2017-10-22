@@ -2,7 +2,7 @@
   <div id="app">
     <header class="okaeri">
       <h2>Bento UI</h2>
-      <p class="text-light text-1">
+      <p class="tw-light t-1">
         Bento UI is a pure CSS framework based on modern components and highly customizable with remixes.
       </p>
       <div class="action">
@@ -13,18 +13,21 @@
         <router-link tag="li" :to="{ name: 'h' }">
           <a>Getting started</a>
         </router-link>
+        <router-link tag="li" :to="{ name: 'l' }">
+          <a>Layout</a>
+        </router-link>
         <router-link tag="li" :to="{ name: 'c' }">
           <a>Components</a>
         </router-link>
-        <router-link tag="li" :to="{ name: 'e' }">
-          <a>Examples</a>
+        <router-link tag="li" :to="{ name: 'b' }">
+          <a>Customize</a>
         </router-link>
       </nav>
     </header>
 
     <router-view></router-view>
 
-    <footer class="text-white bg-primary">
+    <footer class="t-white bg-primary">
       <nav>
         <ul>
           <li>
