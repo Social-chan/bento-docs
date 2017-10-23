@@ -28,6 +28,10 @@ export default new Router({
   linkExactActiveClass: 'active',
   routes: [
     {
+      path: '/',
+      redirect: '/getting-started'
+    },
+    {
       path: '/getting-started',
       name: 'h',
       component: Home
