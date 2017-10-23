@@ -68,8 +68,8 @@
           <span class="bg-purple bs-rounded py-1 t-white">test</span>
         </h3>
         <code-preview identifier="onigiri_buttons" lang="html">
-          <button class="primary bs-circle t-white">Primary</button>&#32;
-          <button class="secondary bs-circle t-white">B</button>
+          <button class="d-inline-block primary bs-circle s-5 t-3 t-white">B</button>&#32;
+          <button class="d-inline-block secondary bs-circle s-4 t-2 t-white">B</button>
         </code-preview>
       </div>
     </div>
