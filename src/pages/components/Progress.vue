@@ -2,7 +2,7 @@
   <section>
     <h2>
       Progress
-      <span class="omusubi bg-green t-white pbt-1 plr-2">new!</span>
+      <span class="bg-green bs-rounded py-1 t-white">new!</span>
     </h2>
     <p class="tw-light t-2 mb-3">
       Native progress bars with HTML5 progress element supported by many browsers.
@@ -25,13 +25,23 @@
       <progress class="purple" max="100" value="45"></progress>&#32;
       <progress class="yellow" max="100" value="40"></progress>&#32;
       <progress class="pink" max="100" value="35"></progress>&#32;
-      <progress class="darkgreen" max="100" value="30"></progress>&#32;
-      <progress class="cyan" max="100" value="25"></progress>
+      <progress class="cyan" max="100" value="30"></progress>
     </code-preview>
 
     <h3>Value</h3>
     <code-preview identifier="progress_value" lang="html">
       <progress class="primary value" max="100" value="61"></progress>
+    </code-preview>
+
+    <h3>
+      Packed
+      <span class="bg-purple bs-rounded py-1 t-white">test</span>
+    </h3>
+    <code-preview identifier="packed_progress" lang="html">
+      <div class="flow mt-2">&#32;
+        <progress class="primary w-75" max="80" value="80"></progress>&#32;
+        <progress class="red w-25" max="20" value="20"></progress>&#32;
+      </div>
     </code-preview>
   </section>
 </template>

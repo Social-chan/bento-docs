@@ -11,7 +11,16 @@
 
     <div class="flow">
       <div class="col-12 col-md-6 pr-md-2">
-        <textarea v-model="playground" class="w-100" style="resize: vertical" rows="8" placeholder="Play with me! Try some code"></textarea>
+        <MonacoEditor
+          height="500"
+          language="html"
+          :code="code"
+          :editorOptions="options"
+          theme="vs"
+          :changeThrottle="2000"
+          @mounted="onMounted"
+          @codeChange="onCodeChange">
+        </MonacoEditor>
       </div>
       <div class="col-12 col-md-6 pl-md-2" v-html="playground"></div>
     </div>
@@ -19,10 +28,31 @@
 </template>
 
 <script>
+import MonacoEditor from 'vue-monaco-editor'
+
 export default {
+  components: {
+    MonacoEditor
+  },
+
   data () {
     return {
-      playground: null
+      playground: null,
+      code: '<!-- Play with me! Try some code -->\n',
+      options: {
+        selectOnLineNumbers: false,
+        renderIndentGuides: true,
+        autoIndent: true
+      }
+    }
+  },
+
+  methods: {
+    onMounted (editor) {
+      this.editor = editor
+    },
+    onCodeChange (editor) {
+      this.playground = this.editor.getValue()
     }
   }
 }

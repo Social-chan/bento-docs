@@ -9,10 +9,10 @@
     <code-preview identifier="flows" lang="html">
       <div class="flow">
         <div class="col-2">
-          <div class="panel bg-red br-1 b-white t-white demo">.col-2</div>
+          <div class="bg-red px-1 br-1 b-white t-3 t-center t-white">.col-2</div>
         </div>
         <div class="col-10">
-          <div class="panel bg-red t-white demo">.col-10</div>
+          <div class="bg-red px-1 t-3 t-center t-white">.col-10</div>
         </div>
       </div>
     </code-preview>
@@ -25,10 +25,10 @@
     <code-preview identifier="wrappers" lang="html">
       <div class="wrapper">
         <div class="one">
-          <div class="panel bg-red br-1 b-white t-white demo">.one</div>
+          <div class="bg-red px-1 t-3 t-center t-white">.one</div>
         </div>
         <div class="two">
-          <div class="panel bg-red t-white demo">.two</div>
+          <div class="bg-red px-1 t-3 t-center t-white">.two</div>
         </div>
       </div>
     </code-preview>

@@ -55,9 +55,9 @@
         </div>
       </section>
       <section class="mb-5">
-        <h2>Discover a new UI with...</h2>
+        <h2>Discover a new...</h2>
 
-        <h3>Colors</h3>
+        <h3>Colored UI</h3>
         <div class="flow justify-content-center mb-2 t-center">
           <div class="col bg-primary t-white">
             primary
@@ -89,28 +89,87 @@
           <div class="col bg-pink t-white">
             pink
           </div>
-          <div class="col bg-darkgreen t-white">
-            darkgreen
-          </div>
           <div class="col bg-cyan t-white">
             cyan
           </div>
         </div>
 
-        <h3>Utilities</h3>
+        <div class="flow justify-content-center mb-2 t-center">
+          <div class="col bg-darkprimary t-white">
+            primary
+          </div>
+          <div class="col bg-darksecondary t-white">
+            secondary
+          </div>
+          <div class="col bg-darkred t-white">
+            red
+          </div>
+          <div class="col bg-darkblack t-white">
+            black
+          </div>
+          <div class="col bg-darkgreen t-white">
+            green
+          </div>
+          <div class="col bg-darkbrown t-white">
+            brown
+          </div>
+          <div class="col bg-darkorange t-white">
+            orange
+          </div>
+          <div class="col bg-darkpurple t-white">
+            purple
+          </div>
+          <div class="col bg-darkyellow t-white">
+            yellow
+          </div>
+          <div class="col bg-darkpink t-white">
+            pink
+          </div>
+          <div class="col bg-darkcyan t-white">
+            cyan
+          </div>
+        </div>
+
+        <h3 class="mt-4">Sandbox</h3>
+        <div class="flow mb-2 t-center">
+          <div class="col py-2">
+            <div class="bg-secondary b-1 t-white">
+              Border
+            </div>
+          </div>
+          <div class="col py-2">
+            <div class="bg-secondary b-1 bs-dashed t-white">
+              Dashed
+            </div>
+          </div>
+          <div class="col py-2">
+            <div class="bg-secondary b-1 bs-dotted t-white">
+              Dotted
+            </div>
+          </div>
+          <div class="col py-2">
+            <div class="bg-secondary b-1 bs-rounded t-white">
+              Rounded
+            </div>
+          </div>
+          <div class="col py-2">
+            <div class="bg-secondary b-1 bs-circle s-3 t-white"></div>
+          </div>
+        </div>
       </section>
       <section>
         <div class="flow justify-content-center align-items-center">
           <div class="col-1 ml-auto t-center">
+            <h3>Installation</h3>
             <div v-html="feather.toSvg('package', { 'width': '100%', 'height': '100%' })"></div>
           </div>
           <div class="col-9 ml-auto pr-4">
             <code-preview :show_preview="false" identifier="npm_install" lang="sh">
               npm install bento-ui
             </code-preview>
-            <!-- <code-preview :show_preview="false" identifier="cdn_install" lang="html">
-              {{ parseHTML(this.cdn) }}
-            </code-preview> -->
+            <code-preview :show_preview="false" identifier="cdn_install" lang="html">
+              {{ cdn }}
+            </code-preview>
           </div>
         </div>
       </section>
@@ -120,11 +179,12 @@
 
 <script>
 export default {
+
   name: 'home',
 
   data () {
     return {
-      cdn: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tadaima@0.6.0/dist/tadaima.min.css" integrity="sha256-RwHO+cDRBjqAPKa4NoGBwbVRMOTJCjQeATDu23TStm0=">'
+      cdn: 'https://cdn.jsdelivr.net/npm/tadaima@0.6.0/dist/tadaima.min.css'
     }
   },
 

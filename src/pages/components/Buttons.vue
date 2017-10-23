@@ -21,7 +21,6 @@
       <button class="purple t-white">Purple</button>&#32;
       <button class="yellow t-white">Yellow</button>&#32;
       <button class="pink t-white">Pink</button>&#32;
-      <button class="darkgreen t-white">Dark green</button>&#32;
       <button class="cyan t-white">Cyan</button>
     </code-preview>
 
