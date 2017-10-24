@@ -50,7 +50,7 @@
             </p>
           </div>
           <div class="col-2">
-            <img src="../../static/img/socialchan-logo.svg" style="border-radius: 24px" width="256" height="256" alt>
+            <img src="../../static/img/socialchan-logo.svg" class="s-6" style="border-radius: 24px" alt>
           </div>
         </div>
       </section>
@@ -164,10 +164,12 @@
             <div v-html="feather.toSvg('package', { 'width': '100%', 'height': '100%' })"></div>
           </div>
           <div class="col-9 ml-auto pr-4">
-            <code-preview :show_preview="false" identifier="npm_install" lang="sh">
+            <h4>NPM</h4>
+            <code-preview :show_preview="false" classes="" identifier="npm_install" lang="sh">
               npm install bento-ui
             </code-preview>
-            <code-preview :show_preview="false" identifier="cdn_install" lang="html">
+            <h4 class="mt-3">CDN</h4>
+            <code-preview :show_preview="false" classes="" identifier="cdn_install" lang="html">
               {{ cdn }}
             </code-preview>
           </div>

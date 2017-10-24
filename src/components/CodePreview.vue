@@ -3,7 +3,7 @@
     <div :id="identifier">
       <slot></slot>
     </div>
-    <pre v-if="show_code" class="mt-3 mb-5" v-highlightjs="code"><code :id="identifier + '_code'" :class="lang"></code></pre>
+    <pre v-if="show_code" :class="classes" v-highlightjs="code"><code :id="identifier + '_code'" :class="lang"></code></pre>
   </div>
 </template>
 
@@ -21,6 +21,11 @@ export default {
       type: Boolean,
       required: false,
       default: true
+    },
+    classes: {
+      type: String,
+      required: false,
+      default: 'mt-3 mb-5'
     },
     identifier: String,
     lang: String
@@ -44,9 +49,8 @@ export default {
 
     // Set attributes for the new element
     newEl.setAttribute('href', 'javascript:;')
-    newEl.setAttribute('class', 'docs-clipboard t-black tooltip-left')
-    newEl.setAttribute('aria-label', 'Copy')
-    newEl.setAttribute('data-clipboard-target', '#' + this.identifier + '_code')
+    newEl.setAttribute('class', 'docs-clipboard t-black')
+    newEl.setAttribute('v-clipboard', this.code)
     newEl.innerHTML = this.feather.toSvg('clipboard')
 
     nextEl.appendChild(newEl)
