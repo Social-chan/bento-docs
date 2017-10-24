@@ -1,6 +1,6 @@
 <template>
   <div id="landing">
-    <section class="docs-feature bg-primary t-white plr-5">
+    <section class="docs-feature bg-black t-white py-5">
       <div class="flow">
         <div class="col demo-icon" v-html="feather.toSvg('anchor')"></div>
         <div class="col demo-icon" v-html="feather.toSvg('camera')"></div>
@@ -59,11 +59,11 @@
 
         <h3>Colored UI</h3>
         <div class="flow justify-content-center mb-2 t-center">
-          <div class="col bg-primary t-white">
-            primary
+          <div class="col bg-blue t-white">
+            blue
           </div>
-          <div class="col bg-secondary t-white">
-            secondary
+          <div class="col bg-gray t-white">
+            gray
           </div>
           <div class="col bg-red t-white">
             red
@@ -95,11 +95,11 @@
         </div>
 
         <div class="flow justify-content-center mb-2 t-center">
-          <div class="col bg-darkprimary t-white">
-            primary
+          <div class="col bg-darkblue t-white">
+            blue
           </div>
-          <div class="col bg-darksecondary t-white">
-            secondary
+          <div class="col bg-darkgray t-white">
+            gray
           </div>
           <div class="col bg-darkred t-white">
             red
@@ -133,27 +133,27 @@
         <h3 class="mt-4">Sandbox</h3>
         <div class="flow mb-2 t-center">
           <div class="col py-2">
-            <div class="bg-secondary b-1 t-white">
+            <div class="bg-gray b-1 t-white">
               Border
             </div>
           </div>
           <div class="col py-2">
-            <div class="bg-secondary b-1 bs-dashed t-white">
+            <div class="bg-gray b-1 bs-dashed t-white">
               Dashed
             </div>
           </div>
           <div class="col py-2">
-            <div class="bg-secondary b-1 bs-dotted t-white">
+            <div class="bg-gray b-1 bs-dotted t-white">
               Dotted
             </div>
           </div>
           <div class="col py-2">
-            <div class="bg-secondary b-1 bs-rounded t-white">
+            <div class="bg-gray b-1 bs-rounded t-white">
               Rounded
             </div>
           </div>
           <div class="col py-2">
-            <div class="bg-secondary b-1 bs-circle s-3 t-white"></div>
+            <div class="bg-gray b-1 bs-circle s-3 t-white"></div>
           </div>
         </div>
       </section>

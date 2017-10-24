@@ -15,8 +15,8 @@
 
     <h3>Colors</h3>
     <code-preview identifier="progress_colors" lang="html">
-      <progress class="primary" max="100" value="80"></progress>&#32;
-      <progress class="secondary" max="100" value="75"></progress>&#32;
+      <progress class="blue" max="100" value="80"></progress>&#32;
+      <progress class="gray" max="100" value="75"></progress>&#32;
       <progress class="red" max="100" value="70"></progress>&#32;
       <progress class="black" max="100" value="65"></progress>&#32;
       <progress class="green" max="100" value="60"></progress>&#32;
@@ -30,7 +30,7 @@
 
     <h3>Value</h3>
     <code-preview identifier="progress_value" lang="html">
-      <progress class="primary value" max="100" value="61"></progress>
+      <progress class="blue value" max="100" value="61"></progress>
     </code-preview>
 
     <h3>
@@ -39,7 +39,7 @@
     </h3>
     <code-preview identifier="packed_progress" lang="html">
       <div class="flow mt-2">&#32;
-        <progress class="primary w-75" max="80" value="80"></progress>&#32;
+        <progress class="blue w-75" max="80" value="80"></progress>&#32;
         <progress class="red w-25" max="20" value="20"></progress>&#32;
       </div>
     </code-preview>

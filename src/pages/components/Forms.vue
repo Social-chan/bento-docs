@@ -5,8 +5,8 @@
     <h3>Inputs</h3>
     <code-preview identifier="text_inputs" lang="html">
       <form>&#32;
-        <input type="text" class="control" placeholder="input">&#32;
-        <input type="text" class="primary control" placeholder="input .primary">&#32;
+        <input type="text" class="b-2 p-2 mb-2 t-secondary" placeholder="input">&#32;
+        <input type="text" class="b-2 p-2 mb-2 t-secondary" placeholder="input .primary">&#32;
       </form>
     </code-preview>
 

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-// import Clipboard from 'clipboard'
+import Clipboard from 'clipboard'
 
 export default {
   props: {
@@ -50,10 +50,15 @@ export default {
     // Set attributes for the new element
     newEl.setAttribute('href', 'javascript:;')
     newEl.setAttribute('class', 'docs-clipboard t-black')
-    newEl.setAttribute('v-clipboard', this.code)
+    newEl.setAttribute('id', this.identifier + '_btn')
+    newEl.setAttribute('data-clipboard-target', '#' + this.identifier + '_code')
     newEl.innerHTML = this.feather.toSvg('clipboard')
 
     nextEl.appendChild(newEl)
+
+    /* eslint-disable no-new */
+    new Clipboard('#' + this.identifier + '_btn')
+    /* eslint-enable no-new */
 
     if (this.show_preview === false) {
       el.removeChild(el.firstChild)
