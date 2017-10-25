@@ -26,10 +26,10 @@
     </h3>
     <code-preview identifier="sizes_buttons" lang="html">
       <button class="bg-blue is-hoverable px-1 py-2 t-0 t-white">Small</button>&#32;
-      <button class="bg-blue is-hoverable px-1 py-2 t-white">Normal</button>&#32;
-      <button class="bg-blue is-hoverable px-1 py-2 t-1 t-white">Large</button>&#32;
-      <button class="bg-blue is-hoverable px-2 py-3 t-2 t-white">Big</button>&#32;
-      <button class="bg-blue is-hoverable px-2 py-3 t-3 t-white">Huge</button>&#32;
+      <button class="bg-blue is-hoverable px-2 py-3 t-white">Normal</button>&#32;
+      <button class="bg-blue is-hoverable px-2 py-3 t-1 t-white">Large</button>&#32;
+      <button class="bg-blue is-hoverable px-2 py-4 t-2 t-white">Big</button>&#32;
+      <button class="bg-blue is-hoverable px-2 py-4 t-3 t-white">Huge</button>&#32;
     </code-preview>
 
     <h3>

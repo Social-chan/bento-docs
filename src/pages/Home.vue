@@ -50,7 +50,7 @@
             </p>
           </div>
           <div class="col-2">
-            <img src="../../static/img/socialchan-logo.svg" class="s-6" style="border-radius: 24px" alt>
+            <img src="../../static/img/socialchan-logo.svg" class="responsive" style="border-radius: 24px" alt>
           </div>
         </div>
       </section>
