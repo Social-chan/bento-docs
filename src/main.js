@@ -17,7 +17,9 @@ Vue.prototype.beautify = require('js-beautify').html
 
 // Components
 import CodePreview from './components/CodePreview'
+import TabsMenu from './components/TabsMenu'
 Vue.component('code-preview', CodePreview)
+Vue.component('TabsMenu', TabsMenu)
 
 Vue.config.productionTip = false
 

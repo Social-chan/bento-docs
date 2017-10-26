@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>Panels</h2>
-    <p class="tw-light t-2 mb-3">
+    <p class="t-2 mb-3">
       Show featured content with panels like application errors or successful alerts.
     </p>
 

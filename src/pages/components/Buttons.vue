@@ -36,10 +36,10 @@
       With icons
       <span class="bg-purple bs-rounded py-1 t-white">test</span>
     </h3>
-    <button class="b-2 b-blue bg-white px-2 py-3 t-blue">
+    <button class="b-2 b-blue bg-white is-hoverable px-2 py-3 t-blue">
       <i v-html="feather.toSvg('user-plus')"></i> Add friend
     </button>
-    <button class="b-2 b-red bg-red px-2 py-3 t-white">
+    <button class="b-2 b-white bg-red is-hoverable px-2 py-3 t-white">
       <i v-html="feather.toSvg('user-minus')"></i> Remove friend
     </button>
 
@@ -47,16 +47,16 @@
       <div class="col-12 col-md-6 pr-md-2">
         <h3>Alt version</h3>
         <code-preview identifier="alt_buttons" lang="html">
-          <button class="b-2 b-blue bg-white px-2 py-3 t-blue">Blue</button>&#32;
-          <button class="b-2 b-gray bg-white px-2 py-3 t-gray">Gray</button>
+          <button class="b-2 b-blue bg-white is-hoverable px-2 py-3 t-blue">Blue</button>&#32;
+          <button class="b-2 b-gray bg-white is-hoverable px-2 py-3 t-gray">Gray</button>
         </code-preview>
       </div>
 
       <div class="col-12 col-md-6 pl-md-2">
         <h3>Omusubi version</h3>
         <code-preview identifier="omusubi_buttons" lang="html">
-          <button class="bg-blue bs-rounded px-2 py-3 t-white">Blue</button>&#32;
-          <button class="bg-gray bs-rounded px-2 py-3 t-white">Gray</button>
+          <button class="bg-blue is-hoverable bs-rounded px-2 py-3 t-white">Blue</button>&#32;
+          <button class="bg-gray is-hoverable bs-rounded px-2 py-3 t-white">Gray</button>
         </code-preview>
       </div>
 
@@ -66,8 +66,8 @@
           <span class="bg-green bs-rounded py-1 t-white">new!</span>
         </h3>
         <code-preview identifier="buttons_teriyaki" lang="html">
-          <button class="b-blue b-2 bs-dashed bg-transparent px-2 py-3 t-blue">Blue</button>&#32;
-          <button class="b-gray b-2 bs-dashed bg-transparent px-2 py-3 t-gray">Gray</button>
+          <button class="b-blue b-2 bs-dashed bg-transparent is-hoverable px-2 py-3 t-blue">Blue</button>&#32;
+          <button class="b-gray b-2 bs-dashed bg-transparent is-hoverable px-2 py-3 t-gray">Gray</button>
         </code-preview>
       </div>
 

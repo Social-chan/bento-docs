@@ -1,5 +1,5 @@
 /*! Bento v0.6.0 | MIT License | bento.social-chan.com */
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -427,10 +427,10 @@ template {
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.8125em;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
   color: #212529;
   -webkit-font-smoothing: antialiased;
 }
@@ -445,11 +445,7 @@ a:focus {
 
 b,
 strong {
-  font-weight: 700;
-}
-
-em {
-  font-style: italic;
+  font-weight: 600;
 }
 
 ul {
@@ -481,7 +477,7 @@ h3 > span,
 h4 > span,
 h5 > span,
 h6 > span {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 h1 {
@@ -530,8 +526,6 @@ h6:last-child {
 small {
   padding-left: 4px;
   font-size: 80%;
-  font-weight: 300;
-  color: #999999;
 }
 
 sub,
@@ -3142,6 +3136,18 @@ footer {
   text-align: right;
 }
 
+.t-uppercase {
+  text-transform: uppercase;
+}
+
+.t-capitalize {
+  text-transform: capitalize;
+}
+
+.t-lowercase {
+  text-transform: lowercase;
+}
+
 .t-blue {
   color: #48a5db !important;
 }
@@ -3208,6 +3214,18 @@ footer {
 
 .t-3 {
   font-size: 1.5rem !important;
+}
+
+.tl-0 {
+  line-height: 0.5rem !important;
+}
+
+.tl-1 {
+  line-height: 0.125rem !important;
+}
+
+.tl-2 {
+  line-height: 0.25rem !important;
 }
 
 .has-shadow {
@@ -3310,6 +3328,8 @@ footer {
   width: 100%;
   padding-right: 70px;
   padding-left: 70px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -3673,7 +3693,6 @@ table thead th {
 button,
 a[role="button"] {
   display: inline-block;
-  line-height: 1em;
   text-align: center;
   vertical-align: baseline;
   cursor: pointer;
@@ -3684,9 +3703,8 @@ a[role="button"] {
 
 button svg,
 a[role="button"] svg {
-  width: 16px;
-  height: 16px;
-  vertical-align: bottom;
+  width: 1rem;
+  height: auto;
 }
 
 button:active,
@@ -3980,6 +3998,10 @@ progress[value].cyan::-moz-progress-bar {
 nav a {
   display: inline-block;
   list-style: none;
+}
+
+nav a:not(.active) {
+  color: #fff;
 }
 
 .nav-primary {

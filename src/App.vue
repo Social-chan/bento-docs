@@ -2,30 +2,22 @@
   <div id="app">
     <header class="bg-red pt-5">
       <div class="container">
-        <h1 class="d-inline-block t-hglg t-white mb-2">Bento UI</h1>
+        <h1 class="d-inline-block t-hglg t-white mb-2">
+          Bento UI
+        </h1>
         <div>
           <span class="t-2 tw-light t-hglg t-white">
             Bento UI is a lightweight, sandbox and technical CSS framework for rapid prototyping any type of application.
           </span>
         </div>
         <div class="flow justify-content-center mx-4">
-          <a :href="'https://github.com/Social-chan/Bento/releases/download/'+latest+'/bento-'+latest.replace('v', '')+'.zip'" class="bg-black is-hoverable t-white px-3 py-4 t-1" role="button"
-          v-html="feather.toSvg('download') + ' Download'"></a>
+          <a
+            :href="'https://github.com/Social-chan/Bento/releases/download/'+latest+'/bento-'+latest.replace('v', '')+'.zip'"
+            class="bg-black is-hoverable t-white px-2 py-3 t-2" role="button"
+            v-html="feather.toSvg('download') + ' Download'">
+          </a>
         </div>
-        <nav>
-          <router-link tag="a" class="d-inline-block is-hoverable bg-white py-3 px-2 bs-top-rounded t-red" :to="{ name: 'h' }">
-            Getting started
-          </router-link>
-          <router-link tag="a" class="d-inline-block is-hoverable p-2 bs-top-rounded t-white" :to="{ name: 'l' }">
-            Layout
-          </router-link>
-          <router-link tag="a" class="d-inline-block is-hoverable p-2 bs-top-rounded t-white" :to="{ name: 'c' }">
-            Components
-          </router-link>
-          <router-link tag="a" class="d-inline-block is-hoverable p-2 bs-top-rounded t-white" :to="{ name: 'b' }">
-            Customize
-          </router-link>
-        </nav>
+        <tabs-menu :root="menu"></tabs-menu>
       </div>
     </header>
 
@@ -60,6 +52,28 @@ export default {
 
   data () {
     return {
+      menu: {
+        class: 'd-inline-block is-hoverable mr-1 p-2 bs-top-rounded',
+        activeClass: 'bg-white t-red',
+        items: [
+          {
+            content: 'Getting started',
+            route: { name: 'h' }
+          },
+          {
+            content: 'Reference',
+            route: { name: 'ref' }
+          },
+          {
+            content: 'Components',
+            route: { name: 'c' }
+          },
+          {
+            content: 'Customize',
+            route: { name: 'b' }
+          }
+        ]
+      },
       latest: null
     }
   },

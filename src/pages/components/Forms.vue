@@ -1,6 +1,9 @@
 <template>
   <section>
     <h2>Forms</h2>
+    <p class="t-2 mb-3">
+      Inputs, textareas, labels and more form elements customized.
+    </p>
 
     <h3>Inputs</h3>
     <code-preview identifier="text_inputs" lang="html">

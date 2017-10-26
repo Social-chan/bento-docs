@@ -4,7 +4,7 @@
       Progress
       <span class="bg-green bs-rounded py-1 t-white">new!</span>
     </h2>
-    <p class="tw-light t-2 mb-3">
+    <p class="t-2 mb-3">
       Native progress bars with HTML5 progress element supported by many browsers.
     </p>
 

@@ -4,10 +4,10 @@ import Router from 'vue-router'
 // Pages
 import Home from '@/pages/Home'
 import Components from '@/pages/Components'
-import Layout from '@/pages/Layout'
+import Reference from '@/pages/Reference'
 import Customize from '@/pages/Customize'
 
-// Layouts pages
+// Reference pages
 import Grids from '@/pages/layout/Grids.vue'
 
 // Components pages
@@ -37,12 +37,12 @@ export default new Router({
       component: Home
     },
     {
-      path: '/layout',
-      component: Layout,
+      path: '/reference',
+      component: Reference,
       children: [
         {
           path: '',
-          name: 'l',
+          name: 'ref',
           component: Grids
         }
       ]
