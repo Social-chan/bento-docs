@@ -10,16 +10,16 @@
 
     <h3>Default</h3>
     <code-preview identifier="default_badges" lang="html">
-      <span class="bg-blue py-2 t-white">blue</span>&#32;
-      <span class="bg-gray py-2 t-white">gray</span>&#32;
-      <span class="bg-red py-2 t-white">red</span>&#32;
-      <span class="bg-black py-2 t-white">black</span>&#32;
-      <span class="bg-green py-2 t-white">green</span>&#32;
-      <span class="bg-brown py-2 t-white">brown</span>&#32;
-      <span class="bg-orange py-2 t-white">orange</span>&#32;
-      <span class="bg-purple py-2 t-white">purple</span>&#32;
-      <span class="bg-yellow py-2 t-white">yellow</span>&#32;
-      <span class="bg-cyan py-2 t-white">cyan</span>
+      <span class="bg-blue py-2 t-white">Blue</span>&#32;
+      <span class="bg-gray py-2 t-white">Gray</span>&#32;
+      <span class="bg-red py-2 t-white">Red</span>&#32;
+      <span class="bg-black py-2 t-white">Black</span>&#32;
+      <span class="bg-green py-2 t-white">Green</span>&#32;
+      <span class="bg-brown py-2 t-white">Brown</span>&#32;
+      <span class="bg-orange py-2 t-white">Orange</span>&#32;
+      <span class="bg-purple py-2 t-white">Purple</span>&#32;
+      <span class="bg-yellow py-2 t-white">Yellow</span>&#32;
+      <span class="bg-cyan py-2 t-white">Cyan</span>
     </code-preview>
 
     <h3>Sizes</h3>

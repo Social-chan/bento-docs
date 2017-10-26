@@ -9,7 +9,7 @@
           </span>
         </div>
         <div class="flow justify-content-center mx-4">
-          <a :href="'https://github.com/Social-chan/Bento/archive/bento-' + latest + '.zip'" class="bg-black is-hoverable t-white px-3 py-4 t-1" role="button"
+          <a :href="'https://github.com/Social-chan/Bento/releases/download/'+latest+'/bento-'+latest.replace('v', '')+'.zip'" class="bg-black is-hoverable t-white px-3 py-4 t-1" role="button"
           v-html="feather.toSvg('download') + ' Download'"></a>
         </div>
         <nav>
