@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="has-active">
     <router-link v-for="(el, index) in root.items" :key="index" tag="a" :class="root.class" :active-class="root.activeClass" :to="el.route">
       {{ el.content }}
     </router-link>
