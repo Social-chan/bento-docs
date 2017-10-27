@@ -53,7 +53,7 @@ export default {
   data () {
     return {
       menu: {
-        class: 'd-inline-block is-hoverable mr-1 p-2 bs-top-rounded',
+        class: 'is-hoverable mr-1 p-2 bs-top-rounded',
         activeClass: 'bg-white t-red',
         items: [
           {

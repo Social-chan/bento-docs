@@ -21,7 +21,7 @@
     <div class="container">
       <section class="my-md-5">
         <div class="flow align-items-center docs-feature">
-          <div class="col-12 col-md-2">
+          <div class="col-12 col-md-2 mb-3">
             <img src="../../static/img/bento_ui-logo.svg" alt>
           </div>
           <div class="col-12 col-md-9 ml-md-4">
@@ -39,7 +39,7 @@
           </div>
         </div>
         <div class="flow align-items-center docs-feature">
-          <div class="col-12 col-md-2">
+          <div class="col-12 col-md-2 mb-3">
             <img src="../../static/img/socialchan-logo.svg" class="responsive" style="border-radius: 24px" alt>
           </div>
           <div class="col-12 col-md-9 pr-md-4">
@@ -161,11 +161,11 @@
       </section>
       <section>
         <div class="flow justify-content-center align-items-center">
-          <div class="col-1 ml-auto t-center">
+          <div class="col-12 col-md-1 mb-3 ml-md-auto t-center">
             <h3>Installation</h3>
             <div v-html="feather.toSvg('package', { 'width': '100%', 'height': '100%' })"></div>
           </div>
-          <div class="col-9 ml-auto pr-4">
+          <div class="col-12 col-md-11 ml-md-auto pr-md-4">
             <h4>NPM</h4>
             <code-preview :show_preview="false" classes="" identifier="npm_install" lang="sh">
               npm install bento-ui
