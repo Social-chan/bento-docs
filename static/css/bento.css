@@ -3780,6 +3780,7 @@ table thead th {
 }
 
 button,
+input[type="button"],
 a[role="button"] {
   display: inline-block;
   text-align: center;
@@ -3791,12 +3792,14 @@ a[role="button"] {
 }
 
 button svg,
+input[type="button"] svg,
 a[role="button"] svg {
   width: 1rem;
   height: auto;
 }
 
 button:active,
+input[type="button"]:active,
 a[role="button"]:active {
   cursor: pointer;
 }
@@ -4089,6 +4092,10 @@ nav {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
+}
+
+nav li {
+  list-style: none;
 }
 
 nav.has-active a:not(.active) {

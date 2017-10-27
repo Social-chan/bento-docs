@@ -8,7 +8,8 @@ import Reference from '@/pages/Reference'
 import Customize from '@/pages/Customize'
 
 // Reference pages
-import Grids from '@/pages/layout/Grids.vue'
+import RefIntro from '@/pages/reference/Introduction.vue'
+import RefGrids from '@/pages/reference/Grids.vue'
 
 // Components pages
 import Playground from '@/pages/components/Playground.vue'
@@ -43,7 +44,12 @@ export default new Router({
         {
           path: '',
           name: 'ref',
-          component: Grids
+          component: RefIntro
+        },
+        {
+          path: 'grids',
+          name: 'ref.grids',
+          component: RefGrids
         }
       ]
     },

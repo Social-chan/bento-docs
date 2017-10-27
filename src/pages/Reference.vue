@@ -7,87 +7,11 @@
 
     <div class="flow mt-5">
       <div class="col-3">
-        <nav class="d-block bg-darkgray bs-rounded p-2">
-          <span class="d-block t-uppercase t-0 py-3 px-2 t-white">
-            <strong>Side menu</strong>
-          </span>
-          <a href="#" class="d-block tw-semibold t-1 py-3 px-1 t-white">
-            Introduction
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            SCSS variables
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Extend with JavaScript
-          </a>
-          <span class="d-block t-uppercase t-0 py-3 px-2 t-white">
-            <strong>Layout</strong>
-          </span>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Breakpoints
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Grids
-          </a>
-          <span class="d-block t-uppercase t-0 py-3 px-2 t-white">
-            <strong>Elements</strong>
-          </span>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Buttons
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Inputs
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Tables
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Navs
-          </a>
-          <span class="d-block t-uppercase t-0 py-3 px-2 t-white">
-            <strong>Utilities</strong>
-          </span>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Colors
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Text
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Borders
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Shadows
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Positions
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Spacing
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Sizing
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Display
-          </a>
-          <a href="#" class="d-block is-hoverable t-1 py-3 px-1 t-white">
-            Flex
-          </a>
-        </nav>
+        <side-menu :root="menu"></side-menu>
       </div>
       <div class="col-9">
         <div class="pl-4">
-          <h3>Introduction</h3>
-          <p>
-            Bento is made for developers/designers who wants take more "freedom" to
-            prototyping with flexible customization at sintax, colors and more...
-          </p>
-          <div class="bg-blue p-3 t-white">
-            <h4 class="mb-2">Advice</h4>
-            We recommend to visit <router-link class="tw-semibold is-hoverable t-white" :to="{ name: 'c' }">Components</router-link> section for better understanding framework
-            classes and it representation, remember that you can try code at Playground.
-          </div>
+          <router-view></router-view>
         </div>
       </div>
     </div>
@@ -96,6 +20,100 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      menu: {
+        navClass: 'd-block bg-darkgray bs-rounded p-2',
+        headerClass: 'd-block t-uppercase t-0 py-3 px-2 t-white',
+        class: 'd-block is-hoverable t-1 py-3 px-1 t-white',
+        items: [
+          {
+            content: 'Side menu'
+          },
+          {
+            content: 'Introduction',
+            route: { name: 'ref' }
+          },
+          {
+            content: 'SCSS variables',
+            route: { name: 'ref.vars' }
+          },
+          {
+            content: 'Extend with JavaScript',
+            route: { name: 'ref.extend' }
+          },
+          {
+            content: 'Layout'
+          },
+          {
+            content: 'Breakpoints',
+            route: { name: 'ref.breakpoints' }
+          },
+          {
+            content: 'Grids',
+            route: { name: 'ref.grids' }
+          },
+          {
+            content: 'Elements'
+          },
+          {
+            content: 'Buttons',
+            route: { name: 'ref.buttons' }
+          },
+          {
+            content: 'Inputs',
+            route: { name: 'ref.inputs' }
+          },
+          {
+            content: 'Tables',
+            route: { name: 'ref.tables' }
+          },
+          {
+            content: 'Navs',
+            route: { name: 'ref.navs' }
+          },
+          {
+            content: 'Utilities'
+          },
+          {
+            content: 'Colors',
+            route: { name: 'ref.colors' }
+          },
+          {
+            content: 'Text',
+            route: { name: 'ref.text' }
+          },
+          {
+            content: 'Borders',
+            route: { name: 'ref.borders' }
+          },
+          {
+            content: 'Shadows',
+            route: { name: 'ref.shadows' }
+          },
+          {
+            content: 'Positions',
+            route: { name: 'ref.positions' }
+          },
+          {
+            content: 'Spacings',
+            route: { name: 'ref.spacings' }
+          },
+          {
+            content: 'Sizing',
+            route: { name: 'ref.sizing' }
+          },
+          {
+            content: 'Display',
+            route: { name: 'ref.display' }
+          },
+          {
+            content: 'Flex',
+            route: { name: 'ref.flex' }
+          }
+        ]
+      }
+    }
+  }
 }
 </script>

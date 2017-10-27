@@ -8,8 +8,15 @@
     <h3>Inputs</h3>
     <code-preview identifier="text_inputs" lang="html">
       <form>&#32;
-        <input type="text" class="b-2 p-2 mb-2 t-secondary" placeholder="input">&#32;
-        <input type="text" class="b-2 p-2 mb-2 t-secondary" placeholder="input .primary">&#32;
+        <input type="text" class="b-2 p-2 mb-2 t-gray" placeholder="nickname">&#32;
+        <input type="password" class="b-2 p-2 mb-2 t-gray" placeholder="password">&#32;
+      </form>
+    </code-preview>
+
+    <h3>Textarea</h3>
+    <code-preview identifier="default_textarea" lang="html">
+      <form>&#32;
+        <textarea class="b-2 p-2 mb-2 t-gray" rows="4"></textarea>&#32;
       </form>
     </code-preview>
 

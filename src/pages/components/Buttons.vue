@@ -28,7 +28,14 @@
       <button class="bg-blue is-hoverable px-2 py-3 t-0 t-white">Small</button>&#32;
       <button class="bg-blue is-hoverable px-2 py-3 t-white">Normal</button>&#32;
       <button class="bg-blue is-hoverable px-2 py-4 t-2 t-white">Large</button>&#32;
-      <button class="bg-blue is-hoverable px-2 py-4 t-3 t-white">Big</button>&#32;
+      <button class="bg-blue is-hoverable px-2 py-4 t-3 t-white">Big</button>
+    </code-preview>
+
+    <h3>Wrappers</h3>
+    <code-preview identifier="wrappers_buttons" lang="html">
+      <button class="bg-blue is-hoverable px-2 py-3 t-white">Button</button>&#32;
+      <a class="bg-blue is-hoverable px-2 py-3 t-white" role="button">Link</a>&#32;
+      <input type="button" class="bg-blue is-hoverable px-2 py-3 t-white" value="Input">
     </code-preview>
 
     <h3>

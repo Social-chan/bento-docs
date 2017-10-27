@@ -26,8 +26,8 @@
     <code-preview identifier="sizing_badges" lang="html">
       <span class="bg-blue py-2 t-0 t-white">Mini</span>&#32;
       <span class="bg-blue py-2 t-white">Normal</span>&#32;
-      <span class="bg-blue py-2 t-2 t-white">Big</span>&#32;
-      <span class="bg-blue py-2 t-3 t-white">Huge</span>
+      <span class="bg-blue py-2 t-2 t-white">Large</span>&#32;
+      <span class="bg-blue py-2 t-3 t-white">Big</span>
     </code-preview>
 
     <h3>Wrappers</h3>
