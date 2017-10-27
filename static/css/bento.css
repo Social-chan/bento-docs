@@ -3093,6 +3093,10 @@ footer {
   border-color: #89cffa !important;
 }
 
+.b-transparent {
+  border-color: transparent !important;
+}
+
 .bs-dotted {
   border-style: dotted !important;
 }
@@ -4082,12 +4086,9 @@ progress[value].cyan::-moz-progress-bar {
 
 nav {
   display: flex;
+  overflow: hidden;
   overflow-x: auto;
-}
-
-nav a {
-  display: inline-block;
-  list-style: none;
+  white-space: nowrap;
 }
 
 nav.has-active a:not(.active) {

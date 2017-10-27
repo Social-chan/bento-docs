@@ -38,9 +38,15 @@
     <button class="b-2 b-blue bg-white is-hoverable px-2 py-3 t-blue">
       <i v-html="feather.toSvg('user-plus')"></i> Add friend
     </button>
-    <button class="b-2 b-white bg-red is-hoverable px-2 py-3 t-white">
+    <button class="b-2 b-transparent bg-red is-hoverable px-2 py-3 t-white">
       <i v-html="feather.toSvg('user-minus')"></i> Remove friend
     </button>
+
+    <div class="bg-green p-3 mt-3 t-white">
+      <h4 class="mb-2">Recommendation</h4>
+      Add class <span class="t-hglg">.b-transparent</span> to non-alt near buttons for match
+      same size.
+    </div>
 
     <div class="flow justify-content-between mt-4">
       <div class="col-12 col-md-6 pr-md-2">

@@ -1,13 +1,13 @@
 <template>
   <div class="container mt-4">
     <h3>Reference</h3>
-    <p class="tw-light t-2 mb-3">
+    <p class="t-2 mb-3">
       Learn and take advantage about Bento classes and SCSS variables. Deep learning.
     </p>
 
     <div class="flow mt-5">
       <div class="col-3">
-        <nav class="bg-darkgray bs-rounded p-2">
+        <nav class="d-block bg-darkgray bs-rounded p-2">
           <span class="d-block t-uppercase t-0 py-3 px-2 t-white">
             <strong>Side menu</strong>
           </span>
