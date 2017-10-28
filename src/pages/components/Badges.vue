@@ -37,28 +37,28 @@
     </code-preview>
 
     <div class="flow justify-content-between mt-4">
-      <div class="col-12 col-md-6 pr-md-2">
+      <div class="cl-12 cl-md-6 pr-md-2">
         <h3>Alt version</h3>
         <code-preview identifier="alt_badges" lang="html">
           <span class="b-1 b-blue py-2 t-blue">Primary</span>&#32;
           <span class="b-1 b-gray py-2 t-gray">Secondary</span>
         </code-preview>
       </div>
-      <div class="col-12 col-md-auto pr-md-2">
+      <div class="cl-12 cl-md-auto pr-md-2">
         <h3>Omusubi version</h3>
         <code-preview identifier="omusubi_badges" lang="html">
           <span class="bg-blue bs-rounded py-2 t-white">Primary</span>&#32;
           <span class="bg-gray bs-rounded py-2 t-white">Secondary</span>
         </code-preview>
       </div>
-      <div class="col-12 col-md-6 pr-md-2">
+      <div class="cl-12 cl-md-6 pr-md-2">
         <h3>Teriyaki version</h3>
         <code-preview identifier="teriyaki_badges" lang="html">
           <span class="b-2 bs-dashed b-blue py-2 t-blue">Primary</span>&#32;
           <span class="b-2 bs-dashed b-gray py-2 t-gray">Secondary</span>
         </code-preview>
       </div>
-      <div class="col-12 col-md-6 pr-md-2">
+      <div class="cl-12 cl-md-6 pr-md-2">
         <h3>Onigiri version</h3>
         <code-preview identifier="onigiri_badges" lang="html">
           <span class="bg-green bs-circle py-1 t-0 t-white">1</span>&#32;

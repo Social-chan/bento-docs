@@ -7,7 +7,7 @@
 
     <h3>Basic example</h3>
     <div class="flow">
-      <div class="col-6 pr-2">
+      <div class="cl-6 pr-2">
         <code-preview identifier="panel_primary" lang="html">
           <div class="bg-blue p-3 t-white">
             <h4 class="mb-2">Blue Panel</h4>
@@ -15,7 +15,7 @@
           </div>
         </code-preview>
       </div>
-      <div class="col-6 pl-2">
+      <div class="cl-6 pl-2">
         <code-preview identifier="panel_secondary" lang="html">
           <div class="bg-gray p-3 t-white">
             <h4 class="mb-2">Gray Panel</h4>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="flow">
-      <div class="col-6 pr-2">
+      <div class="cl-6 pr-2">
         <h3>
           Teriyaki version
           <span class="bg-green bs-rounded py-1 t-white">new!</span>
@@ -39,7 +39,7 @@
           </div>
         </code-preview>
       </div>
-      <div class="col-6 pl-2">
+      <div class="cl-6 pl-2">
         <h3>
           Omusubi version
           <span class="bg-green bs-rounded py-1 t-white">new!</span>
@@ -59,7 +59,7 @@
       <span class="bg-purple bs-rounded py-1 t-white">test</span>
     </h3>
     <div class="flow">
-      <div class="col-6 pr-2">
+      <div class="cl-6 pr-2">
         <div class="bg-red bs-rounded p-3 t-white">
           <h4 class="mb-2">
             <i class="icon" v-html="feather.toSvg('alert-triangle')"></i>
@@ -68,7 +68,7 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         </div>
       </div>
-      <div class="col-6 pl-2">
+      <div class="cl-6 pl-2">
         <div class="bg-green p-3 t-white">
           <h4 class="mb-2">
             <i class="icon" v-html="feather.toSvg('star')"></i>

@@ -5,6 +5,9 @@
         <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c' }">
           <a>Playground</a>
         </router-link>
+        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.grids' }">
+          <a>Grids</a>
+        </router-link>
         <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.tables' }">
           <a>Tables</a>
         </router-link>

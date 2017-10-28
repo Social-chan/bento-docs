@@ -56,7 +56,7 @@
     </div>
 
     <div class="flow justify-content-between mt-4">
-      <div class="col-12 col-md-6 pr-md-2">
+      <div class="cl-12 cl-md-6 pr-md-2">
         <h3>Alt version</h3>
         <code-preview identifier="alt_buttons" lang="html">
           <button class="b-2 b-blue bg-white is-hoverable px-2 py-3 t-blue">Blue</button>&#32;
@@ -64,7 +64,7 @@
         </code-preview>
       </div>
 
-      <div class="col-12 col-md-6 pl-md-2">
+      <div class="cl-12 cl-md-6 pl-md-2">
         <h3>Omusubi version</h3>
         <code-preview identifier="omusubi_buttons" lang="html">
           <button class="bg-blue is-hoverable bs-rounded px-2 py-3 t-white">Blue</button>&#32;
@@ -72,7 +72,7 @@
         </code-preview>
       </div>
 
-      <div class="col-12 col-md-6 pr-md-2">
+      <div class="cl-12 cl-md-6 pr-md-2">
         <h3>
           Teriyaki version
           <span class="bg-green bs-rounded py-1 t-white">new!</span>
@@ -83,7 +83,7 @@
         </code-preview>
       </div>
 
-      <div class="col-12 col-md-6 pl-md-2">
+      <div class="cl-12 cl-md-6 pl-md-2">
         <h3>
           Onigiri version
           <span class="bg-green bs-rounded py-1 t-white">new!</span>

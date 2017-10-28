@@ -8,11 +8,11 @@
     <h3>Flows</h3>
     <code-preview identifier="flows" lang="html">
       <div class="flow">
-        <div class="col-2">
-          <div class="bg-red px-1 br-1 b-white t-3 t-center t-white">.col-2</div>
+        <div class="cl-2">
+          <div class="bg-red px-1 br-1 b-white t-3 t-center t-white">.cl-2</div>
         </div>
-        <div class="col-10">
-          <div class="bg-red px-1 t-3 t-center t-white">.col-10</div>
+        <div class="cl-10">
+          <div class="bg-red px-1 t-3 t-center t-white">.cl-10</div>
         </div>
       </div>
     </code-preview>

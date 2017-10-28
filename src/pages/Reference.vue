@@ -6,10 +6,10 @@
     </p>
 
     <div class="flow mt-5">
-      <div class="col-3">
+      <div class="cl-3">
         <side-menu :root="menu"></side-menu>
       </div>
-      <div class="col-9">
+      <div class="cl-9">
         <div class="pl-4">
           <router-view></router-view>
         </div>

@@ -8,11 +8,15 @@ import Reference from '@/pages/Reference'
 import Customize from '@/pages/Customize'
 
 // Reference pages
-import RefIntro from '@/pages/reference/Introduction.vue'
+import RefIntro from '@/pages/reference/Intro.vue'
+import RefVars from '@/pages/reference/SCSS.vue'
+import RefExtend from '@/pages/reference/Extend.vue'
+import RefBreakpts from '@/pages/reference/Breakpoints.vue'
 import RefGrids from '@/pages/reference/Grids.vue'
 
 // Components pages
 import Playground from '@/pages/components/Playground.vue'
+import Grids from '@/pages/components/Grids.vue'
 import Tables from '@/pages/components/Tables.vue'
 import Buttons from '@/pages/components/Buttons.vue'
 import Forms from '@/pages/components/Forms.vue'
@@ -47,6 +51,21 @@ export default new Router({
           component: RefIntro
         },
         {
+          path: 'vars',
+          name: 'ref.vars',
+          component: RefVars
+        },
+        {
+          path: 'extend',
+          name: 'ref.extend',
+          component: RefExtend
+        },
+        {
+          path: 'breakpoints',
+          name: 'ref.breakpts',
+          component: RefBreakpts
+        },
+        {
           path: 'grids',
           name: 'ref.grids',
           component: RefGrids
@@ -61,6 +80,11 @@ export default new Router({
           path: '',
           name: 'c',
           component: Playground
+        },
+        {
+          path: 'grids',
+          name: 'c.grids',
+          component: Grids
         },
         {
           path: 'tables',

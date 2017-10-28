@@ -10,7 +10,7 @@
     </p>
 
     <div class="flow">
-      <div class="col-12 col-md-6 pr-md-2">
+      <div class="cl-12 cl-md-6 pr-md-2">
         <MonacoEditor
           height="500"
           language="html"
@@ -22,7 +22,7 @@
           @codeChange="onCodeChange">
         </MonacoEditor>
       </div>
-      <div class="col-12 col-md-6 pl-md-2" v-html="playground"></div>
+      <div class="cl-12 cl-md-6 pl-md-2" v-html="playground"></div>
     </div>
   </section>
 </template>
