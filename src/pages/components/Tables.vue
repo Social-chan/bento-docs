@@ -35,7 +35,7 @@
 
     <h3>Responsive</h3>
     <code-preview identifier="responsive_table" lang="html">
-      <table class="responsive">
+      <table class="is-responsive">
         <thead>
           <tr>
             <th>#</th>

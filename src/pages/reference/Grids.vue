@@ -1,6 +1,22 @@
 <template>
   <section>
     <h3>Grids</h3>
+
+    <div class="flow mb-2">
+      <div class="mr-2 d-flex">
+        <span class="bg-darkcyan bs-left-rounded py-2 t-white">Responsive</span>
+        <span class="bg-darkgreen bs-right-rounded py-2 t-white">Yes</span>
+      </div>
+      <div class="mr-2 d-flex">
+        <span class="bg-darkpurple bs-left-rounded py-2 t-white">Variables</span>
+        <span class="bg-darkgreen bs-right-rounded py-2 t-white">Yes</span>
+      </div>
+      <div class="mr-2 d-flex">
+        <span class="bg-darkorange bs-left-rounded py-2 t-white">Version</span>
+        <span class="bg-darkgray bs-right-rounded py-2 t-white">0.6.0</span>
+      </div>
+    </div>
+
     Bento has got a responsive grid system like <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>
     it is divided by columns (<code>.cl-*</code>) into a row.
 

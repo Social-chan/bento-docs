@@ -44,7 +44,7 @@
           <span class="b-1 b-gray py-2 t-gray">Secondary</span>
         </code-preview>
       </div>
-      <div class="cl-12 cl-md-auto pr-md-2">
+      <div class="cl-12 cl-md-6 pr-md-2">
         <h3>Omusubi version</h3>
         <code-preview identifier="omusubi_badges" lang="html">
           <span class="bg-blue bs-rounded py-2 t-white">Primary</span>&#32;

@@ -2,12 +2,14 @@
   <div id="app">
     <header class="bg-red pt-5">
       <div class="container">
-        <h1 class="d-inline-block t-hglg t-white mb-2">
-          Bento UI
+        <h1 class="d-inline-block t-white mb-2">
+          <mark>Bento UI</mark>
         </h1>
         <div>
-          <span class="t-2 tw-light t-hglg t-white">
-            Bento UI is a lightweight, sandbox and technical CSS framework for rapid prototyping any type of application.
+          <span class="t-2 tw-light t-white">
+            <mark>
+              Bento UI is a lightweight, sandbox and technical CSS framework for rapid prototyping any type of application.
+            </mark>
           </span>
         </div>
         <div class="flow justify-content-center mx-4">

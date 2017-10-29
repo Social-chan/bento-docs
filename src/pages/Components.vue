@@ -14,8 +14,8 @@
         <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.buttons' }">
           <a>Buttons</a>
         </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.forms' }">
-          <a>Forms</a>
+        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.inputs' }">
+          <a>Inputs</a>
         </router-link>
         <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.panels' }">
           <a>Panels</a>

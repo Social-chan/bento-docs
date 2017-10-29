@@ -40,7 +40,7 @@
         </div>
         <div class="flow align-items-center docs-feature">
           <div class="cl-12 cl-md-2 mb-3">
-            <img src="../../static/img/socialchan-logo.svg" class="responsive" style="border-radius: 24px" alt>
+            <img src="../../static/img/socialchan-logo.svg" class="is-responsive" style="border-radius: 24px" alt>
           </div>
           <div class="cl-12 cl-md-9 ml-md-4">
             <h3>Social-chan</h3>

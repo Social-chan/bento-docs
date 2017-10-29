@@ -19,7 +19,7 @@ import Playground from '@/pages/components/Playground.vue'
 import Grids from '@/pages/components/Grids.vue'
 import Tables from '@/pages/components/Tables.vue'
 import Buttons from '@/pages/components/Buttons.vue'
-import Forms from '@/pages/components/Forms.vue'
+import Inputs from '@/pages/components/Inputs.vue'
 import Panels from '@/pages/components/Panels.vue'
 import Progress from '@/pages/components/Progress.vue'
 import Tooltips from '@/pages/components/Tooltips.vue'
@@ -97,9 +97,9 @@ export default new Router({
           component: Buttons
         },
         {
-          path: 'forms',
-          name: 'c.forms',
-          component: Forms
+          path: 'inputs',
+          name: 'c.inputs',
+          component: Inputs
         },
         {
           path: 'panels',

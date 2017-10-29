@@ -39,7 +39,7 @@
     </h3>
     <code-preview identifier="packed_progress" lang="html">
       <div class="flow mt-2">&#32;
-        <progress class="blue w-75" max="80" value="80"></progress>&#32;
+        <progress class="w-75" max="80" value="80"></progress>&#32;
         <progress class="red w-25" max="20" value="20"></progress>&#32;
       </div>
     </code-preview>

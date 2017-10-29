@@ -22,7 +22,7 @@
         <li>Tables</li>
         <li>Navs</li>
         <li>Tooltips</li>
-        <li>Forms</li>
+        <li>Inputs</li>
         <li>Progress</li>
       </ul>
     </p>
@@ -31,7 +31,7 @@
     <div class="flow">
       <div class="cl-12 cl-md-6 pr-md-2">
         <p>Colors for the grayscale (white to black):</p>
-        <table class="responsive">
+        <table class="is-responsive">
           <thead>
             <tr>
               <th>Variable</th>
@@ -88,7 +88,7 @@
       </div>
       <div class="cl-12 cl-md-6 pl-md-2">
         <p>UI colors usable to backgrounds and text as utilities:</p>
-        <table class="responsive">
+        <table class="is-responsive">
           <thead>
             <tr>
               <th>Variable</th>
