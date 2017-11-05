@@ -42,7 +42,7 @@
       With icons
       <span class="bg-purple bs-rounded py-1 t-white">test</span>
     </h3>
-    <button class="b-2 b-blue bg-white is-hoverable px-1 py-3 t-blue">
+    <button class="b-2 b-blue bg-transparent is-hoverable px-1 py-3 t-blue">
       <i v-html="feather.toSvg('user-plus')"></i> Add friend
     </button>
     <button class="b-2 b-transparent bg-red is-hoverable px-1 py-3 t-white">
@@ -59,8 +59,8 @@
       <div class="cl-12 cl-md-6 pr-md-2">
         <h3>Alt version</h3>
         <code-preview identifier="alt_buttons" lang="html">
-          <button class="b-2 b-blue bg-white is-hoverable px-1 py-3 t-blue">Blue</button>&#32;
-          <button class="b-2 b-gray bg-white is-hoverable px-1 py-3 t-gray">Gray</button>
+          <button class="b-2 b-blue bg-transparent is-hoverable px-1 py-3 t-blue">Blue</button>&#32;
+          <button class="b-2 b-gray bg-transparent is-hoverable px-1 py-3 t-gray">Gray</button>
         </code-preview>
       </div>
 

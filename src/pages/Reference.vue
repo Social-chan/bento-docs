@@ -23,7 +23,7 @@ export default {
   data () {
     return {
       menu: {
-        navClass: 'd-block bg-darkgray bs-rounded p-2',
+        navClass: 'd-block has-active bg-gray bs-rounded p-2',
         headerClass: 'd-block t-uppercase t-0 py-3 px-2 t-white',
         class: 'd-block is-hoverable t-1 py-3 px-1 t-white',
         items: [

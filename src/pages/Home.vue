@@ -1,6 +1,6 @@
 <template>
   <div id="landing">
-    <section class="docs-feature bg-black t-white py-md-5">
+    <section class="docs-feature bg-gray t-white py-md-5">
       <div class="container">
         <div class="flow">
           <div class="cl-3 cl-md-1 demo-icon" v-html="feather.toSvg('anchor')"></div>
@@ -97,37 +97,37 @@
         </div>
 
         <div class="flow justify-content-center mb-2 t-center">
-          <div class="cl-3 cl-md-1 bg-darkblue t-white">
+          <div class="cl-3 cl-md-1 bg-blue bg-darken t-white">
             blue
           </div>
-          <div class="cl-3 cl-md-1 bg-darkgray t-white">
+          <div class="cl-3 cl-md-1 bg-gray bg-darken t-white">
             gray
           </div>
-          <div class="cl-3 cl-md-1 bg-darkred t-white">
+          <div class="cl-3 cl-md-1 bg-red bg-darken t-white">
             red
           </div>
-          <div class="cl-3 cl-md-1 bg-darkblack t-white">
+          <div class="cl-3 cl-md-1 bg-black bg-darken t-white">
             black
           </div>
-          <div class="cl-3 cl-md-1 bg-darkgreen t-white">
+          <div class="cl-3 cl-md-1 bg-green bg-darken t-white">
             green
           </div>
-          <div class="cl-3 cl-md-1 bg-darkbrown t-white">
+          <div class="cl-3 cl-md-1 bg-brown bg-darken t-white">
             brown
           </div>
-          <div class="cl-3 cl-md-1 bg-darkorange t-white">
+          <div class="cl-3 cl-md-1 bg-orange bg-darken t-white">
             orange
           </div>
-          <div class="cl-3 cl-md-1 bg-darkpurple t-white">
+          <div class="cl-3 cl-md-1 bg-purple bg-darken t-white">
             purple
           </div>
-          <div class="cl-3 cl-md-1 bg-darkyellow t-white">
+          <div class="cl-3 cl-md-1 bg-yellow bg-darken t-white">
             yellow
           </div>
-          <div class="cl-3 cl-md-1 bg-darkpink t-white">
+          <div class="cl-3 cl-md-1 bg-pink bg-darken t-white">
             pink
           </div>
-          <div class="cl-3 cl-md-1 bg-darkcyan t-white">
+          <div class="cl-3 cl-md-1 bg-cyan bg-darken t-white">
             cyan
           </div>
         </div>

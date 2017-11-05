@@ -15,7 +15,7 @@
         <div class="flow justify-content-center mx-4">
           <a
             :href="'https://github.com/Social-chan/Bento/releases/download/'+latest+'/bento-'+latest.replace('v', '')+'.zip'"
-            class="bg-black is-hoverable t-white px-2 py-3 t-2" role="button"
+            class="bg-gray is-hoverable t-white px-2 py-3 t-2" role="button"
             v-html="feather.toSvg('download') + ' Download'">
           </a>
         </div>
