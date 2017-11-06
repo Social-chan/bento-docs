@@ -19,9 +19,11 @@ Vue.prototype.beautify = require('js-beautify').html
 import CodePreview from './components/CodePreview'
 import TabsMenu from './components/TabsMenu'
 import SideMenu from './components/SideMenu'
+import SubMenu from './components/SubMenu'
 Vue.component('code-preview', CodePreview)
 Vue.component('TabsMenu', TabsMenu)
 Vue.component('SideMenu', SideMenu)
+Vue.component('SubMenu', SubMenu)
 
 Vue.config.productionTip = false
 

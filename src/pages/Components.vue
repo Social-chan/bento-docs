@@ -1,36 +1,6 @@
 <template>
   <div>
-    <nav class="has-shadow mb-4" style="list-style: none">
-      <div class="container">
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c' }">
-          <a>Playground</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.grids' }">
-          <a>Grids</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.tables' }">
-          <a>Tables</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.buttons' }">
-          <a>Buttons</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.inputs' }">
-          <a>Inputs</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.panels' }">
-          <a>Panels</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.tooltips' }">
-          <a>Tooltips</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.progress' }">
-          <a>Progress</a>
-        </router-link>
-        <router-link tag="li" class="d-inline-block p-3" :to="{ name: 'c.badges' }">
-          <a>Badges</a>
-        </router-link>
-      </div>
-    </nav>
+    <sub-menu :root="submenu"></sub-menu>
     <div class="container">
       <router-view></router-view>
     </div>
@@ -39,6 +9,48 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      submenu: {
+        navClass: 'has-shadow mb-4',
+        class: 'd-inline-block p-3',
+        activeClass: 'tw-semibold',
+        items: [
+          {
+            content: 'Playground',
+            route: { name: 'c' }
+          },
+          {
+            content: 'Grids',
+            route: { name: 'c.grids' }
+          },
+          {
+            content: 'Tables',
+            route: { name: 'c.tables' }
+          },
+          {
+            content: 'Buttons',
+            route: { name: 'c.buttons' }
+          },
+          {
+            content: 'Inputs',
+            route: { name: 'c.inputs' }
+          },
+          {
+            content: 'Panels',
+            route: { name: 'c.panels' }
+          },
+          {
+            content: 'Progress',
+            route: { name: 'c.progress' }
+          },
+          {
+            content: 'Badges',
+            route: { name: 'c.badges' }
+          }
+        ]
+      }
+    }
+  }
 }
 </script>

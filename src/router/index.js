@@ -13,6 +13,7 @@ import RefVars from '@/pages/reference/SCSS.vue'
 import RefExtend from '@/pages/reference/Extend.vue'
 import RefBreakpts from '@/pages/reference/Breakpoints.vue'
 import RefGrids from '@/pages/reference/Grids.vue'
+import RefColors from '@/pages/reference/utilities/Colors.vue'
 
 // Components pages
 import Playground from '@/pages/components/Playground.vue'
@@ -69,6 +70,11 @@ export default new Router({
           path: 'grids',
           name: 'ref.grids',
           component: RefGrids
+        },
+        {
+          path: 'colors',
+          name: 'ref.colors',
+          component: RefColors
         }
       ]
     },

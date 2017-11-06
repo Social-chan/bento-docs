@@ -60,7 +60,7 @@
         <h2>Discover a new...</h2>
 
         <h3>Colored UI</h3>
-        <div class="flow justify-content-center mb-2 t-center">
+        <div class="flow justify-content-center mb-4 t-center" id="colors">
           <div class="cl-3 cl-md-1 bg-blue t-white">
             blue
           </div>
@@ -69,9 +69,6 @@
           </div>
           <div class="cl-3 cl-md-1 bg-red t-white">
             red
-          </div>
-          <div class="cl-3 cl-md-1 bg-black t-white">
-            black
           </div>
           <div class="cl-3 cl-md-1 bg-green t-white">
             green
@@ -97,38 +94,14 @@
         </div>
 
         <div class="flow justify-content-center mb-2 t-center">
-          <div class="cl-3 cl-md-1 bg-blue bg-darken t-white">
-            blue
+          <div class="cl-1">
+            <button class="bg-gray bg-lighten bs-circle s-2 t-white" @click="slideColors('bg-lighten', 'bg-darken')"></button>
           </div>
-          <div class="cl-3 cl-md-1 bg-gray bg-darken t-white">
-            gray
+          <div class="cl-1">
+            <button class="bg-gray bs-circle s-2 t-white" @click="slideColors(null, ['bg-lighten', 'bg-darken'])"></button>
           </div>
-          <div class="cl-3 cl-md-1 bg-red bg-darken t-white">
-            red
-          </div>
-          <div class="cl-3 cl-md-1 bg-black bg-darken t-white">
-            black
-          </div>
-          <div class="cl-3 cl-md-1 bg-green bg-darken t-white">
-            green
-          </div>
-          <div class="cl-3 cl-md-1 bg-brown bg-darken t-white">
-            brown
-          </div>
-          <div class="cl-3 cl-md-1 bg-orange bg-darken t-white">
-            orange
-          </div>
-          <div class="cl-3 cl-md-1 bg-purple bg-darken t-white">
-            purple
-          </div>
-          <div class="cl-3 cl-md-1 bg-yellow bg-darken t-white">
-            yellow
-          </div>
-          <div class="cl-3 cl-md-1 bg-pink bg-darken t-white">
-            pink
-          </div>
-          <div class="cl-3 cl-md-1 bg-cyan bg-darken t-white">
-            cyan
+          <div class="cl-1">
+            <button class="bg-gray bg-darken bs-circle s-2 t-white" @click="slideColors('bg-darken', 'bg-lighten')"></button>
           </div>
         </div>
 
@@ -183,18 +156,28 @@
 
 <script>
 export default {
-
   name: 'home',
 
   data () {
     return {
-      cdn: 'https://cdn.jsdelivr.net/npm/bento-ui@0.6/dist/bento.min.css'
+      cdn: 'https://cdn.jsdelivr.net/npm/bento-ui/dist/bento.min.css'
     }
   },
 
   methods: {
-    parseHTML (v) {
-      console.log(v.replace(/&lt;/g, '<').replace(/&gt;/g, '>'))
+    slideColors (to, rm) {
+      // console.log(document.getElementById('colors').children)
+
+      Array.from(document.getElementById('colors').children).forEach(function (item) {
+        if (to) item.classList.toggle(to)
+        if (rm) {
+          if (typeof rm === 'object') {
+            item.classList.remove(...rm)
+          } else {
+            item.classList.remove(rm)
+          }
+        }
+      })
     }
   }
 }

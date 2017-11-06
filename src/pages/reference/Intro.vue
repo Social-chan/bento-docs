@@ -14,8 +14,8 @@
 
     <h4>Legend</h4>
     <div class="mr-2 d-flex">
-      <span class="bg-darkcyan bs-left-rounded py-2 t-white">Responsive</span>
-      <span class="bg-darkgreen bs-right-rounded py-2 t-white">Yes</span>
+      <span class="bg-cyan bs-left-rounded py-2 t-0 t-white">Responsive</span>
+      <span class="bg-green bs-right-rounded py-2 t-0 t-white">Yes</span>
     </div>
     <p>
       If the element or utility has got responsive breakpoints like:
@@ -23,23 +23,23 @@
       <code>{prefix}-lg-*</code> or <code>{prefix}-xl-*</code>
     </p>
     <div class="mr-2 d-flex">
-      <span class="bg-darkpurple bs-left-rounded py-2 t-white">Variables</span>
-      <span class="bg-darkgreen bs-right-rounded py-2 t-white">Yes</span>
+      <span class="bg-purple bs-left-rounded py-2 t-0 t-white">Variables</span>
+      <span class="bg-green bs-right-rounded py-2 t-0 t-white">Yes</span>
     </div>
     <p>
       If the element or utility has got exclusive variables declared on
       <code>_variables.scss</code> file.
     </p>
     <div class="mr-2 d-flex">
-      <span class="bg-darkorange bs-left-rounded py-2 t-white">Version</span>
-      <span class="bg-darkgray bs-right-rounded py-2 t-white">0.6.0</span>
+      <span class="bg-orange bs-left-rounded py-2 t-0 t-white">Version</span>
+      <span class="bg-gray bs-right-rounded py-2 t-0 t-white">0.6.0</span>
     </div>
     <p>
       Element/utility is available since version 0.6.0.
     </p>
     <div class="mr-2 d-flex">
-      <span class="bg-darkblack bs-left-rounded py-2 t-white">Deprecated</span>
-      <span class="bg-darkred bs-right-rounded py-2 t-white">1.0.0</span>
+      <span class="bg-black bs-left-rounded py-2 t-0 t-white">Deprecated</span>
+      <span class="bg-red bs-right-rounded py-2 t-0 t-white">1.0.0</span>
     </div>
     <p>
       Element/utility is deprecated (deleted or in deletion plans) at version 1.0.0.
